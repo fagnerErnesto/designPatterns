@@ -10,6 +10,11 @@
 <node CREATED="1556628633771" ID="ID_331740028" MODIFIED="1556628637193" TEXT="estruturais">
 <node CREATED="1556629002105" ID="ID_960714853" MODIFIED="1556629028744" TEXT="s&#xe3;o 7 padr&#xf5;es"/>
 <node CREATED="1556629031402" ID="ID_669330551" MODIFIED="1556629081769" TEXT="utilizado para definir como as classes e objetos s&#xe3;o compostos para a forma&#xe7;&#xe3;o de grandes estruturas"/>
+<node CREATED="1557147012999" ID="ID_1695212818" MODIFIED="1557147029359" TEXT="preocupa-se com a composi&#xe7;&#xe3;o das classes e seus objetos"/>
+<node CREATED="1557147033703" ID="ID_350363297" MODIFIED="1557147090148" TEXT="heran&#xe7;a e largamente utilizado">
+<node CREATED="1557147075366" ID="ID_467670204" MODIFIED="1557147097188" TEXT="para compor interfaces"/>
+<node CREATED="1557147106422" ID="ID_1297548671" MODIFIED="1557147132084" TEXT="definir maneiras de compor objetos e novas funcionalidades"/>
+</node>
 </node>
 <node CREATED="1556628637533" ID="ID_1722565200" MODIFIED="1556628643921" TEXT="comportamentais">
 <node CREATED="1556629115690" ID="ID_352562786" MODIFIED="1556629120825" TEXT="s&#xe3;o 11 padr&#xf5;es"/>
@@ -58,7 +63,7 @@
 <node CREATED="1556645295173" ID="ID_158518101" MODIFIED="1556645358834" TEXT="criar uma f&#xe1;brica geradora de objetos onde s&#xe3;o passados os parametros em um m&#xe9;todo que ser&#xe1; respons&#xe1;vel por criar o objeto da a&#xe7;&#xe3;o necess&#xe1;ria"/>
 </node>
 <node CREATED="1556631082667" ID="ID_780112652" MODIFIED="1556631086808" TEXT="aplica&#xe7;&#xe3;o">
-<node CREATED="1556645448299" ID="ID_282170624" MODIFIED="1556645475654" TEXT="em situa&#xe7;&#xf5;es onde o contexto &#xe9; muito gen&#xe9;rico e pode ser aplicado em diferentes especializa&#xe7;&#xf5;es"/>
+<node CREATED="1556645448299" ID="ID_282170624" MODIFIED="1557146671203" TEXT="em situa&#xe7;&#xf5;es onde o contexto &#xe9; muito gen&#xe9;rico e pode ser aplicado em diferentes especializa&#xe7;&#xf5;es, por&#xe9;m necessitam de patroniza&#xe7;&#xe3;o na gera&#xe7;&#xe3;o de objetos"/>
 </node>
 <node CREATED="1556631087643" ID="ID_28376923" MODIFIED="1556631095160" TEXT="consequ&#xea;ncia">
 <node CREATED="1556645528569" ID="ID_1747475758" MODIFIED="1556797757974" TEXT="torna a implementa&#xe7;&#xe3;o mais complexa, por&#xe9;m facilita a cria&#xe7;&#xe3;o das especializa&#xe7;&#xf5;es, pois boa parte da execua&#xe7;&#xe3;o fica encapsulada"/>
@@ -66,7 +71,7 @@
 </node>
 <node CREATED="1556798092969" ID="ID_934347219" MODIFIED="1556808529093" TEXT="abstract factory" VSHIFT="17">
 <node CREATED="1556798103722" ID="ID_461670798" MODIFIED="1556798118464" TEXT="utilizado para implementar fam&#xed;lias de classes bem definidas"/>
-<node CREATED="1556798271620" ID="ID_1395380507" MODIFIED="1556798295540" TEXT="cria se m&#xe9;todos para cada produto que herda a classe"/>
+<node CREATED="1556798271620" ID="ID_1395380507" MODIFIED="1557146724377" TEXT="cria-se m&#xe9;todos para cada produto que herda a classe"/>
 <node CREATED="1556806959160" ID="ID_827762237" MODIFIED="1556806972726" TEXT="constroi fam&#xed;lias de objetos de uma s&#xf3; vez"/>
 </node>
 <node CREATED="1556805568280" HGAP="22" ID="ID_1803883337" MODIFIED="1556808532085" TEXT="builder" VSHIFT="19">
@@ -80,8 +85,12 @@
 <node CREATED="1556888166359" ID="ID_1850695453" MODIFIED="1556888202101" TEXT="especificar os tipos de objetos a serem criados, usando uma inst&#xe2;ncia prot&#xf3;tipo e a partir dela criar novos objetos"/>
 <node CREATED="1556888217449" ID="ID_1879148540" MODIFIED="1556888245685" TEXT="Uma inst&#xe2;ncia inicializada que ser&#xe1; clonada ou copiada"/>
 <node CREATED="1556888249783" ID="ID_1766398817" MODIFIED="1556888306358" TEXT="t&#xe9;cnica pode ser utilizada para criar v&#xe1;rias objetos a partir de uma nova inst&#xe2;ncia ao salvar uma lista de itens relacionados a outro"/>
+<node CREATED="1557146800198" ID="ID_1358219747" MODIFIED="1557146833204" TEXT="&#xe9; mais r&#xe1;pido que criar uma nova inst&#xe2;ncia do mesmo objeto"/>
+<node CREATED="1557146834566" ID="ID_1440781700" MODIFIED="1557146865837" TEXT="o consumo de mem&#xf3;ria &#xe9; maior que a cria&#xe7;&#xe3;o de inst&#xe2;ncia"/>
 </node>
 </node>
-<node CREATED="1556913063479" ID="ID_1879640091" MODIFIED="1556913075717" POSITION="left" TEXT="grupo estrutural"/>
+<node CREATED="1556913063479" ID="ID_1879640091" MODIFIED="1557146930141" POSITION="left" TEXT="grupo estrutural" VSHIFT="73">
+<node CREATED="1557146972112" ID="ID_61044732" MODIFIED="1557146975204" TEXT="bridge"/>
+</node>
 </node>
 </map>
