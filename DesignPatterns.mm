@@ -90,7 +90,23 @@
 </node>
 </node>
 <node CREATED="1556913063479" ID="ID_1879640091" MODIFIED="1557146930141" POSITION="left" TEXT="grupo estrutural" VSHIFT="73">
-<node CREATED="1557146972112" ID="ID_61044732" MODIFIED="1557146975204" TEXT="bridge"/>
+<node CREATED="1557146972112" ID="ID_61044732" MODIFIED="1557146975204" TEXT="bridge">
+<node CREATED="1557236729269" ID="ID_112077886" MODIFIED="1557236748995" TEXT="To objetivo de separar a representa&#xe7;&#xe3;o da implementa&#xe7;&#xe3;o"/>
+<node CREATED="1557236749892" ID="ID_1126553693" MODIFIED="1557236795683" TEXT="quando alterado um ou outro o seu respectivo n&#xe3;o precisa ser modificado"/>
+<node CREATED="1557236806533" ID="ID_615571757" MODIFIED="1557236852499" TEXT="usado para abstrair um conceito e manter a implementa&#xe7;&#xe3;o independente, a qual pode ser realizada para v&#xe1;rios casos diferentes">
+<node CREATED="1557236855313" ID="ID_817257461" MODIFIED="1557236932599" TEXT="janela de OS">
+<node CREATED="1557236864788" ID="ID_638505213" MODIFIED="1557236878028" TEXT="Funciona de uma forma em OSX"/>
+<node CREATED="1557236878772" ID="ID_78605037" MODIFIED="1557236889715" TEXT="de outra forma em UNIX"/>
+<node CREATED="1557236890308" ID="ID_1080430231" MODIFIED="1557236907282" TEXT="e diferente tamb&#xe9;m windows"/>
+<node CREATED="1557236910256" ID="ID_781329222" MODIFIED="1557236918770" TEXT="por&#xe9;m o conceito &#xe9; &#xfa;nico"/>
+</node>
+</node>
+</node>
+<node CREATED="1557236936678" ID="ID_937055366" MODIFIED="1557236939266" TEXT="adapter">
+<node CREATED="1557237084932" ID="ID_78052400" MODIFIED="1557237098418" TEXT="convertar a interface de uma classe em outra interface"/>
+<node CREATED="1557237105700" ID="ID_834385068" MODIFIED="1557237121170" TEXT="permitir que interfaces incompat&#xed;veis trabalhem em conjunto"/>
+<node CREATED="1557237130292" ID="ID_1180112231" MODIFIED="1557237140771" TEXT="equiparar interfaces de classes diferentes"/>
+</node>
 </node>
 </node>
 </map>
