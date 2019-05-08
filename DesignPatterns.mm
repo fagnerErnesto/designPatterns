@@ -70,9 +70,40 @@
 </node>
 </node>
 <node CREATED="1556798092969" ID="ID_934347219" MODIFIED="1556808529093" TEXT="abstract factory" VSHIFT="17">
-<node CREATED="1556798103722" ID="ID_461670798" MODIFIED="1556798118464" TEXT="utilizado para implementar fam&#xed;lias de classes bem definidas"/>
+<node CREATED="1557317107377" ID="ID_727399635" MODIFIED="1557317141282" TEXT="Uma hierarquia que encapsula">
+<node CREATED="1557317221603" ID="ID_669213944" MODIFIED="1557317244002" TEXT="v&#xe1;rias &quot;plataformas&quot; poss&#xed;veis"/>
+<node CREATED="1557317248997" ID="ID_1344844983" MODIFIED="1557317259442" TEXT="a constru&#xe7;&#xe3;o de um pacote de produtos"/>
+</node>
+<node CREATED="1557317763395" ID="ID_1115561783" MODIFIED="1557317766706" TEXT="Problema">
+<node CREATED="1557322472837" ID="ID_1913581" MODIFIED="1557322500284" TEXT="adaptar a aplica&#xe7;&#xe3;o para diferentes cen&#xe1;rios"/>
+<node CREATED="1557322501267" ID="ID_15140697" MODIFIED="1557322544799" TEXT="reduzir a quantidade de defini&#xe7;&#xf5;es de &quot;if&quot; durante a implementa&#xe7;&#xe3;o"/>
+<node CREATED="1557322550675" ID="ID_1058604495" MODIFIED="1557322582257" TEXT="encapsular a implementa&#xe7;&#xe3;o mais gen&#xe9;rica e complexa"/>
+</node>
+<node CREATED="1557322602995" HGAP="22" ID="ID_655806520" MODIFIED="1557322864497" TEXT="Solu&#xe7;&#xe3;o" VSHIFT="8">
+<node CREATED="1556798103722" ID="ID_461670798" MODIFIED="1556798118464" TEXT="utilizado para implementar fam&#xed;lias de classes bem definidas">
+<node CREATED="1557317037379" ID="ID_856749823" MODIFIED="1557317048558" TEXT="relacionados ou dependentes"/>
+</node>
 <node CREATED="1556798271620" ID="ID_1395380507" MODIFIED="1557146724377" TEXT="cria-se m&#xe9;todos para cada produto que herda a classe"/>
 <node CREATED="1556806959160" ID="ID_827762237" MODIFIED="1556806972726" TEXT="constroi fam&#xed;lias de objetos de uma s&#xf3; vez"/>
+<node CREATED="1557322988147" ID="ID_460346254" MODIFIED="1557323000859" TEXT="N&#xe3;o define classes concretas">
+<node CREATED="1557323070019" ID="ID_1421031682" MODIFIED="1557323084257" TEXT="O cliente nunca ir&#xe1; implementar a &quot;plataforma&quot;"/>
+<node CREATED="1557323002389" ID="ID_1111157820" MODIFIED="1557323109729" TEXT="O cliente ir&#xe1; implementar um classe concreta que herda toda a &quot;plataforma&quot; j&#xe1; definida"/>
+</node>
+</node>
+<node CREATED="1557324103203" ID="ID_589500037" MODIFIED="1557324655309" TEXT="checklist">
+<node CREATED="1557324120131" ID="ID_1412966503" MODIFIED="1557324167297" TEXT="decidir se a &quot;independencia da plataforma&quot; e crea&#xe7;&#xe3;o de servi&#xe7;os s&#xe3;o as dores atuais do c&#xf3;digo"/>
+<node CREATED="1557324168613" ID="ID_856580205" MODIFIED="1557324202433" TEXT="Mapear a matriz da &quot;plataforma&quot; versus &quot;produto&quot;"/>
+<node CREATED="1557324203699" ID="ID_412154375" MODIFIED="1557324317152" TEXT="Defina uma factory interface que consiste em um m&#xe9;todo de factory (que cria) por produto."/>
+<node CREATED="1557324358050" ID="ID_1033016368" MODIFIED="1557324413186" TEXT="Definir uma factory class derivada da interface factory, para cada plataforma que encapsula todas as refer&#xea;ncias ao operador new"/>
+<node CREATED="1557324415205" ID="ID_580420011" MODIFIED="1557324586818" TEXT="O cliente deve retirar todas as refer&#xea;ncias do operador new, e usar os m&#xe9;todos factory para criar novos produtos"/>
+</node>
+<node CREATED="1557324712467" ID="ID_106035638" MODIFIED="1557324717921" TEXT="regras de ouro">
+<node CREATED="1557324780325" ID="ID_1930690137" MODIFIED="1557324815985" TEXT="Algumas vezes os padr&#xf5;es competem entre si"/>
+<node CREATED="1557324949076" ID="ID_1318668895" MODIFIED="1557325131346" TEXT="Abstract Factory, Builder e Prototype definem fabricas de objetos">
+<node CREATED="1557325405295" ID="ID_649419820" MODIFIED="1557325446274" TEXT="Abstract Factory tem um factory method produzindo objetos de v&#xe1;rias classes"/>
+<node CREATED="1557325644627" ID="ID_79420284" MODIFIED="1557325665489" TEXT="Os objetos s&#xe3;o produzidos imediatamente"/>
+</node>
+</node>
 </node>
 <node CREATED="1556805568280" HGAP="22" ID="ID_1803883337" MODIFIED="1556808532085" TEXT="builder" VSHIFT="19">
 <node CREATED="1556805575865" ID="ID_1923290793" MODIFIED="1556805593238" TEXT="serapar a constru&#xe7;&#xe3;o de um objeto complexo da sua representa&#xe7;&#xe3;o"/>
@@ -80,6 +111,24 @@
 <node CREATED="1556805637546" ID="ID_622314913" MODIFIED="1556805669974" TEXT="encapsula o processo complexo para que a representa&#xe7;&#xe3;o torne-se simples"/>
 <node CREATED="1556806940948" ID="ID_1964163411" MODIFIED="1556808655521" TEXT="constroi a representa&#xe7;&#xe3;o passo a passo, geralmente chamado por outra classe"/>
 <node CREATED="1556808726537" ID="ID_340509374" MODIFIED="1556808757126" TEXT="boa op&#xe7;&#xe3;o para quando existem processos e/ou etapas complexas para a produ&#xe7;&#xe3;o de um produto final"/>
+<node CREATED="1557326766879" ID="ID_316290338" MODIFIED="1557326786098" TEXT="o fluxo s&#xf3; termina quando todos os objetos da representa&#xe7;&#xe3;o s&#xe3;o gerados"/>
+<node CREATED="1557326787316" ID="ID_1185378600" MODIFIED="1557326790401" TEXT="checklist">
+<node CREATED="1557326796196" ID="ID_156288796" MODIFIED="1557326855281" TEXT="Decidir se uma entrada comum e muitas represeta&#xe7;&#xf5;es poss&#xed;veis (ou sa&#xed;das) s&#xe3;o o problema"/>
+<node CREATED="1557326865125" ID="ID_284189750" MODIFIED="1557326946578" TEXT="Encapsular a an&#xe1;lise da entrada comum em uma classe &quot;Reader&quot;"/>
+<node CREATED="1557326948227" ID="ID_1445473123" MODIFIED="1557327005185" TEXT="Planejar um protocolo padr&#xe3;o para criar todas as possibilidades de sa&#xed;da">
+<node CREATED="1557327011950" ID="ID_691195821" MODIFIED="1557327060945" TEXT="Defina os passos desse protocolo em uma interface Builder"/>
+</node>
+<node CREATED="1557327110725" ID="ID_576143046" MODIFIED="1557327127170" TEXT="Defina uma classe Builder para cada representa&#xe7;&#xe3;o alvo"/>
+<node CREATED="1557327232355" ID="ID_1479503614" MODIFIED="1557327289953" TEXT="O cliente cria o objeto Reader e o objeto Builder e registro o &#xfa;ltimo com o primeiro."/>
+<node CREATED="1557327341314" ID="ID_1346115409" MODIFIED="1557327375570" TEXT="O cliente solicita a constru&#xe7;&#xe3;o do Reader"/>
+<node CREATED="1557327376533" ID="ID_1866914866" MODIFIED="1557327406641" TEXT="O cliente  solicita o Builder para retornar o resultado"/>
+</node>
+<node CREATED="1557327413477" ID="ID_363507578" MODIFIED="1557327417248" TEXT="Exemplo">
+<node CREATED="1557327418515" ID="ID_80012551" MODIFIED="1557327428177" TEXT="Pedido no fast-food">
+<node CREATED="1557327429907" ID="ID_1862078319" MODIFIED="1557327444690" TEXT="Cada item do combo &#xe9; uma representa&#xe7;&#xe3;o"/>
+<node CREATED="1557327445764" ID="ID_924568079" MODIFIED="1557327489633" TEXT="O cliente (Reader) s&#xf3; recebe o combo, depois que a cozinha (Builder) prepara todos os itens do combo"/>
+</node>
+</node>
 </node>
 <node CREATED="1556808764074" ID="ID_1664330898" MODIFIED="1556808771846" TEXT="prototype" VSHIFT="20">
 <node CREATED="1556888166359" ID="ID_1850695453" MODIFIED="1556888202101" TEXT="especificar os tipos de objetos a serem criados, usando uma inst&#xe2;ncia prot&#xf3;tipo e a partir dela criar novos objetos"/>
@@ -108,7 +157,11 @@
 <node CREATED="1557237130292" ID="ID_1180112231" MODIFIED="1557237140771" TEXT="equiparar interfaces de classes diferentes"/>
 <node CREATED="1557246859491" ID="ID_1459589948" MODIFIED="1557246887900" TEXT="&#xe9; um tipo de bridge, por&#xe9;m para que classes de tipos diferentes possam interagir"/>
 </node>
-<node CREATED="1557246891844" HGAP="24" ID="ID_1210518014" MODIFIED="1557246898210" TEXT="proxy" VSHIFT="6"/>
+<node CREATED="1557246891844" HGAP="24" ID="ID_1210518014" MODIFIED="1557246898210" TEXT="proxy" VSHIFT="6">
+<node CREATED="1557314247859" ID="ID_789759031" MODIFIED="1557314284082" TEXT="fornecer um substituto (surrogate) ou marcador da loca&#xe7;&#xe3;o de outro objeto"/>
+<node CREATED="1557314285060" ID="ID_513878024" MODIFIED="1557314309970" TEXT="controlar acesso a um determinado objeto"/>
+<node CREATED="1557314314021" ID="ID_1155852610" MODIFIED="1557314327458" TEXT="um objeto que representa outro"/>
+</node>
 </node>
 </node>
 </map>
