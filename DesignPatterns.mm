@@ -106,7 +106,9 @@
 <node CREATED="1557237084932" ID="ID_78052400" MODIFIED="1557237098418" TEXT="convertar a interface de uma classe em outra interface"/>
 <node CREATED="1557237105700" ID="ID_834385068" MODIFIED="1557237121170" TEXT="permitir que interfaces incompat&#xed;veis trabalhem em conjunto"/>
 <node CREATED="1557237130292" ID="ID_1180112231" MODIFIED="1557237140771" TEXT="equiparar interfaces de classes diferentes"/>
+<node CREATED="1557246859491" ID="ID_1459589948" MODIFIED="1557246887900" TEXT="&#xe9; um tipo de bridge, por&#xe9;m para que classes de tipos diferentes possam interagir"/>
 </node>
+<node CREATED="1557246891844" HGAP="24" ID="ID_1210518014" MODIFIED="1557246898210" TEXT="proxy" VSHIFT="6"/>
 </node>
 </node>
 </map>
