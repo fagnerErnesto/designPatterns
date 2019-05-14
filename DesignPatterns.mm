@@ -35,6 +35,10 @@
 <node CREATED="1556629232537" ID="ID_733257219" MODIFIED="1556629254600" POSITION="left" TEXT="grupo criacional">
 <node CREATED="1556629256364" ID="ID_889548605" MODIFIED="1556645576026" TEXT="singleton" VSHIFT="-26">
 <node CREATED="1556629354234" ID="ID_629478729" MODIFIED="1556797537108" TEXT="garantir que uma classe tenha apenas uma inst&#xe2;ncia em todo o sistema, com ponto global de acesso."/>
+<node CREATED="1557757239617" ID="ID_999925844" MODIFIED="1557757251375" TEXT="deve ser considerada apenas se:">
+<node CREATED="1557757324691" ID="ID_403993904" MODIFIED="1557757326495" TEXT="A propriedade da inst&#xe2;ncia &#xfa;nica n&#xe3;o pode ser atribu&#xed;da de forma razo&#xe1;vel"/>
+<node CREATED="1557757327633" ID="ID_206930205" MODIFIED="1557757355578" TEXT="Se a inicializa&#xe7;&#xe3;o tardia for desejada"/>
+</node>
 <node CREATED="1556629300764" ID="ID_492701831" MODIFIED="1556629305961" TEXT="problema">
 <node CREATED="1556629598311" ID="ID_245186190" MODIFIED="1556629639800" TEXT="execu&#xe7;&#xe3;o de um processo monol&#xed;tico que deve manter as mesmas caracter&#xed;sticas do inicio ao fim da execu&#xe7;&#xe3;o"/>
 </node>
@@ -53,6 +57,11 @@
 <node CREATED="1556631026378" ID="ID_92237187" MODIFIED="1556631073721" TEXT="definir interface para cria&#xe7;&#xe3;o de objetos, mas permitir que as subclasses decidam qual classe instanciar"/>
 <node CREATED="1556798072280" ID="ID_413752256" MODIFIED="1556798080481" TEXT="tem boa expansibilidade"/>
 <node CREATED="1556798229752" ID="ID_1547824773" MODIFIED="1556798268023" TEXT="cria-se uma classe para cada objeto derivado"/>
+<node CREATED="1557754959715" ID="ID_567828457" MODIFIED="1557754980178" TEXT="&#xe9; criado atrav&#xe9;s da heran&#xe7;a"/>
+<node CREATED="1557755046305" ID="ID_1602134013" MODIFIED="1557755061423" TEXT="necessita de subclasses por&#xe9;m n&#xe3;o necessita de inicializa&#xe7;&#xe3;o">
+<node CREATED="1557755064481" ID="ID_1982450483" MODIFIED="1557755087297" TEXT="o construtor deve ser privado ou protegido"/>
+<node CREATED="1557755089312" ID="ID_218329916" MODIFIED="1557755098335" TEXT="a inicializa&#xe7;&#xe3;o do objeto deve ser encapsulada"/>
+</node>
 <node CREATED="1556631157834" ID="ID_572000519" MODIFIED="1556631161576" TEXT="Objetivo">
 <node CREATED="1556631114092" ID="ID_574691505" MODIFIED="1556631129112" TEXT="cria uma inst&#xe2;ncia de v&#xe1;rias classes derivadas"/>
 </node>
@@ -136,31 +145,79 @@
 <node CREATED="1556888249783" ID="ID_1766398817" MODIFIED="1556888306358" TEXT="t&#xe9;cnica pode ser utilizada para criar v&#xe1;rias objetos a partir de uma nova inst&#xe2;ncia ao salvar uma lista de itens relacionados a outro"/>
 <node CREATED="1557146800198" ID="ID_1358219747" MODIFIED="1557146833204" TEXT="&#xe9; mais r&#xe1;pido que criar uma nova inst&#xe2;ncia do mesmo objeto"/>
 <node CREATED="1557146834566" ID="ID_1440781700" MODIFIED="1557146865837" TEXT="o consumo de mem&#xf3;ria &#xe9; maior que a cria&#xe7;&#xe3;o de inst&#xe2;ncia"/>
+<node CREATED="1557756273729" ID="ID_1029402849" MODIFIED="1557756311855" TEXT="O m&#xe9;todo &quot;clone&quot; deve ser adicionado ao uma hierarquia de &quot;produtos&quot; existentes"/>
+<node CREATED="1557756824836" ID="ID_1450759165" MODIFIED="1557756842479" TEXT="N&#xe3;o necessita de subclasses, por&#xe9;m precisa ser inicializado"/>
 </node>
 </node>
 <node CREATED="1556913063479" ID="ID_1879640091" MODIFIED="1557146930141" POSITION="left" TEXT="grupo estrutural" VSHIFT="73">
 <node CREATED="1557146972112" ID="ID_61044732" MODIFIED="1557146975204" TEXT="bridge">
-<node CREATED="1557236729269" ID="ID_112077886" MODIFIED="1557236748995" TEXT="To objetivo de separar a representa&#xe7;&#xe3;o da implementa&#xe7;&#xe3;o"/>
-<node CREATED="1557236749892" ID="ID_1126553693" MODIFIED="1557236795683" TEXT="quando alterado um ou outro o seu respectivo n&#xe3;o precisa ser modificado"/>
+<node CREATED="1557236729269" ID="ID_112077886" MODIFIED="1557758106655" TEXT="Tem objetivo de separar a representa&#xe7;&#xe3;o da implementa&#xe7;&#xe3;o"/>
+<node CREATED="1557236749892" ID="ID_1126553693" MODIFIED="1557758153856" TEXT="quando alterado a implementa&#xe7;&#xe3;o ou a represeta&#xe7;&#xe3;o o seu respectivo n&#xe3;o precisa ser modificado"/>
 <node CREATED="1557236806533" ID="ID_615571757" MODIFIED="1557236852499" TEXT="usado para abstrair um conceito e manter a implementa&#xe7;&#xe3;o independente, a qual pode ser realizada para v&#xe1;rios casos diferentes">
 <node CREATED="1557236855313" ID="ID_817257461" MODIFIED="1557236932599" TEXT="janela de OS">
 <node CREATED="1557236864788" ID="ID_638505213" MODIFIED="1557236878028" TEXT="Funciona de uma forma em OSX"/>
 <node CREATED="1557236878772" ID="ID_78605037" MODIFIED="1557236889715" TEXT="de outra forma em UNIX"/>
 <node CREATED="1557236890308" ID="ID_1080430231" MODIFIED="1557236907282" TEXT="e diferente tamb&#xe9;m windows"/>
-<node CREATED="1557236910256" ID="ID_781329222" MODIFIED="1557236918770" TEXT="por&#xe9;m o conceito &#xe9; &#xfa;nico"/>
+<node CREATED="1557236910256" ID="ID_781329222" MODIFIED="1557758192352" TEXT="por&#xe9;m o conceito (represeta&#xe7;&#xe3;o) &#xe9; &#xfa;nico"/>
 </node>
 </node>
+<node CREATED="1557760141856" ID="ID_320016713" MODIFIED="1557760199518" TEXT="Faz os objetos funcionarem antes de serem objetos"/>
+<node CREATED="1557759362466" ID="ID_1651801795" MODIFIED="1557759366191" TEXT="quando usar">
+<node CREATED="1557759367776" ID="ID_1068679668" MODIFIED="1557759435471" TEXT="deseja realizar a vincula&#xe7;&#xe3;o em tempo de execu&#xe7;&#xe3;o"/>
+<node CREATED="1557759481264" ID="ID_902502032" MODIFIED="1557759519715" TEXT="voc&#xea; tem uma prolifera&#xe7;&#xe3;o de classes a partir de um conjunto de interfaces e numerosas implementa&#xe7;&#xf5;es"/>
+<node CREATED="1557759521153" ID="ID_307966720" MODIFIED="1557759560959" TEXT="desejar compartilhar uma implementa&#xe7;&#xe3;o entre muitos objetos"/>
+<node CREATED="1557759634416" ID="ID_72517536" MODIFIED="1557759653374" TEXT="voc&#xea; precisa mapear a hierarquia de classe de forma ortogonal"/>
 </node>
-<node CREATED="1557236936678" ID="ID_937055366" MODIFIED="1557236939266" TEXT="adapter">
+<node CREATED="1557759659138" ID="ID_1441607811" MODIFIED="1557759664702" TEXT="consequ&#xea;ncias">
+<node CREATED="1557759687250" ID="ID_1407192464" MODIFIED="1557759706219" TEXT="desacoplar os objetos da interface"/>
+<node CREATED="1557759707378" ID="ID_1888278858" MODIFIED="1557759729359" TEXT="aumentar a extencibilidade">
+<node CREATED="1557759736705" ID="ID_730619923" MODIFIED="1557759772349" TEXT="voc&#xea; pode extender  a hierarquia de abstra&#xe7;&#xe3;o e implementa&#xe7;&#xe3;o independentemente"/>
+</node>
+<node CREATED="1557759777568" ID="ID_1199908781" MODIFIED="1557759782334" TEXT="esconde detalhes do cliente"/>
+</node>
+</node>
+<node CREATED="1557236936678" HGAP="32" ID="ID_937055366" MODIFIED="1557765029422" TEXT="adapter" VSHIFT="13">
 <node CREATED="1557237084932" ID="ID_78052400" MODIFIED="1557237098418" TEXT="convertar a interface de uma classe em outra interface"/>
 <node CREATED="1557237105700" ID="ID_834385068" MODIFIED="1557237121170" TEXT="permitir que interfaces incompat&#xed;veis trabalhem em conjunto"/>
 <node CREATED="1557237130292" ID="ID_1180112231" MODIFIED="1557237140771" TEXT="equiparar interfaces de classes diferentes"/>
 <node CREATED="1557246859491" ID="ID_1459589948" MODIFIED="1557246887900" TEXT="&#xe9; um tipo de bridge, por&#xe9;m para que classes de tipos diferentes possam interagir"/>
+<node CREATED="1557841108257" HGAP="28" ID="ID_573187570" MODIFIED="1557841599351" TEXT="faz as coisas funcionarem depois que s&#xe3;o projetadas" VSHIFT="-8"/>
+<node CREATED="1557841244767" ID="ID_1108871417" MODIFIED="1557841246590" TEXT="&#xe9; reformada para fazer classes n&#xe3;o relacionadas trabalharem juntas."/>
+<node CREATED="1557840584303" ID="ID_290791385" MODIFIED="1557840589245" TEXT="checklist">
+<node CREATED="1557840590337" ID="ID_1698845177" MODIFIED="1557840610093" TEXT="Identificar o &quot;jogadores&quot;">
+<node CREATED="1557840610976" ID="ID_1139658043" MODIFIED="1557840655277" TEXT="componente que precisar ser acomodado"/>
+<node CREATED="1557840655825" ID="ID_1987745116" MODIFIED="1557840662669" TEXT="componente que precisa ser adaptado"/>
 </node>
-<node CREATED="1557246891844" HGAP="24" ID="ID_1210518014" MODIFIED="1557246898210" TEXT="proxy" VSHIFT="6">
+<node CREATED="1557840664433" ID="ID_1881896667" MODIFIED="1557840679534" TEXT="identificar a interface que o cliente deseja"/>
+<node CREATED="1557840701520" ID="ID_1738334080" MODIFIED="1557840772061" TEXT="projetar uma classe que pode cobrir a correspondencia: o adaptador para o cliente."/>
+<node CREATED="1557840856126" ID="ID_103656589" MODIFIED="1557840979774" TEXT="o adaptador">
+<node CREATED="1557840981152" ID="ID_1136034876" MODIFIED="1557840982706" TEXT="&quot;tem uma&quot; inst&#xe2;ncia do adaptado"/>
+<node CREATED="1557840983791" ID="ID_578714479" MODIFIED="1557841023165" TEXT="mapeia a interface do cliente para o interface do adaptado"/>
+</node>
+<node CREATED="1557841043184" ID="ID_1106664713" MODIFIED="1557841074917" TEXT="O cliente usa a interface do adaptador"/>
+</node>
+</node>
+<node CREATED="1557246891844" HGAP="34" ID="ID_1210518014" MODIFIED="1557765031726" TEXT="proxy" VSHIFT="34">
 <node CREATED="1557314247859" ID="ID_789759031" MODIFIED="1557314284082" TEXT="fornecer um substituto (surrogate) ou marcador da loca&#xe7;&#xe3;o de outro objeto"/>
 <node CREATED="1557314285060" ID="ID_513878024" MODIFIED="1557314309970" TEXT="controlar acesso a um determinado objeto"/>
 <node CREATED="1557314314021" ID="ID_1155852610" MODIFIED="1557314327458" TEXT="um objeto que representa outro"/>
+<node CREATED="1557843916367" ID="ID_613388813" MODIFIED="1557843925917" TEXT="4 situa&#xe7;&#xf5;es comuns de uso">
+<node CREATED="1557843947406" ID="ID_684649549" MODIFIED="1557843972141" TEXT="instanciar objetos de cria&#xe7;&#xe3;o complexa/cara">
+<node CREATED="1557843975857" ID="ID_243394598" MODIFIED="1557843998814" TEXT="o objeto s&#xf3; &#xe9; criado no seu primeiro acesso/requisi&#xe7;&#xe3;o"/>
+</node>
+<node CREATED="1557844000143" ID="ID_1116568979" MODIFIED="1557844058077" TEXT="um representa&#xe7;&#xe3;o local de objetos que est&#xe3;o em outro servidor/endere&#xe7;o"/>
+<node CREATED="1557844059743" ID="ID_50972570" MODIFIED="1557844145405" TEXT="controle de acesso a uma objeto master considerado sensivel, verifica se o &quot;chamador&quot; pode acessar integral ou parcialmente um determinado objeto"/>
+<node CREATED="1557844161649" ID="ID_1981499244" MODIFIED="1557844182477" TEXT="adicionar a&#xe7;&#xf5;es inteligentes um objeto acessado"/>
+</node>
+<node CREATED="1557844954623" ID="ID_195665539" MODIFIED="1557845016350" TEXT="fornece uma &#xfa;nica interface para as classes empacotador (classe proxy) e empacotada (classe original)"/>
+<node CREATED="1557844336064" ID="ID_220011757" MODIFIED="1557844339357" TEXT="checklist">
+<node CREATED="1557844401662" ID="ID_658816827" MODIFIED="1557844510398" TEXT="Identificar a influ&#xea;ncia ou aspecto para implemntar como um &quot;empacotador&quot; ou substituto"/>
+<node CREATED="1557844511392" ID="ID_56798276" MODIFIED="1557844556797" TEXT="definir uma interface que fa&#xe7;am o proxy e o componente original serem compat&#xed;veis"/>
+<node CREATED="1557844558192" ID="ID_13568073" MODIFIED="1557844658942" TEXT="Considerar a defini&#xe7;&#xe3;o de uma Factory para decidir se ser&#xe1; usado o objeto proxy ou o original"/>
+<node CREATED="1557844691151" ID="ID_1946687839" MODIFIED="1557844775933" TEXT="a classe empacotadora agrega a classe original e implementa a interface comum &#xe0;s duas classes"/>
+<node CREATED="1557844795614" ID="ID_17230582" MODIFIED="1557844822926" TEXT="a classe original deve ser inicializada no construtor ou na primeira chamada"/>
+<node CREATED="1557844876943" ID="ID_142537674" MODIFIED="1557844925069" TEXT="cada m&#xe9;todo empacotador contribui com sua cobertura, e delega ao objeto empacotado"/>
+</node>
 </node>
 </node>
 </node>
