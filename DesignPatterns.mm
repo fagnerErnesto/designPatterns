@@ -219,6 +219,34 @@
 <node CREATED="1557844876943" ID="ID_142537674" MODIFIED="1557844925069" TEXT="cada m&#xe9;todo empacotador contribui com sua cobertura, e delega ao objeto empacotado"/>
 </node>
 </node>
+<node CREATED="1557924167950" ID="ID_960229234" MODIFIED="1557924171165" TEXT="Decorator">
+<node CREATED="1557924172528" ID="ID_1293005231" MODIFIED="1557924195708" TEXT="Forma de adicionar funcionalidades/responsabilidades a um objeto dinamicamente"/>
+<node CREATED="1557940661293" ID="ID_342955" MODIFIED="1557940680573" TEXT="Fornece uma interface melhorada da interface comum"/>
+<node CREATED="1557940681967" ID="ID_358514141" MODIFIED="1557940724332" TEXT="A classe decorator herda a mesca classe pai da classe a ser manipulada"/>
+<node CREATED="1557941322575" ID="ID_1442714921" MODIFIED="1557941369724" TEXT="Decorator melhora as responsabilidades do objeto">
+<node CREATED="1557941370895" ID="ID_1136027481" MODIFIED="1557941379452" TEXT="&#xe9; mais transparente para o cliente"/>
+<node CREATED="1557941379872" ID="ID_137852821" MODIFIED="1557941397820" TEXT="suporta composi&#xe7;&#xe3;o recursiva">
+<node CREATED="1557941408271" ID="ID_1606194114" MODIFIED="1557941419286" TEXT="isso n&#xe3;o &#xe9; poss&#xed;vel aplicar no Adapter"/>
+</node>
+</node>
+<node CREATED="1557941585597" ID="ID_1163962759" MODIFIED="1557941630953" TEXT="&#xe9; planejado para adicionar responsabilidade ao objeto se necessidade de subclasses da classe original"/>
+<node CREATED="1557940727055" ID="ID_104881273" MODIFIED="1557940732603" TEXT="checklist">
+<node CREATED="1557940733869" ID="ID_1248815402" MODIFIED="1557940750460" TEXT="garantir que o contexto &#xe9;">
+<node CREATED="1557940751501" ID="ID_378745796" MODIFIED="1557940782556" TEXT="componente com uma &#xfa;nica implementa&#xe7;&#xe3;o"/>
+<node CREATED="1557940773837" ID="ID_1216691819" MODIFIED="1557940806956" TEXT="com v&#xe1;rias op&#xe7;&#xf5;es de melhorias ou responsabilidades"/>
+<node CREATED="1557940807327" ID="ID_1165155006" MODIFIED="1557940827980" TEXT="e uma interface comum a todas"/>
+</node>
+<node CREATED="1557940831694" ID="ID_218951662" MODIFIED="1557940904427" TEXT="criar uma interface com baixo demoninador comum para que todas as classes seja interligadas"/>
+<node CREATED="1557940905695" ID="ID_785297240" MODIFIED="1557940961340" TEXT="criar uma classe de segundo n&#xed;vel (decorator) para dar suporte as melhorias opcionais"/>
+<node CREATED="1557940962048" ID="ID_1094919455" MODIFIED="1557940992172" TEXT="A classe original e a classe decorator devem herdar da mesma classe pai"/>
+<node CREATED="1557941007966" ID="ID_1748684782" MODIFIED="1557941047869" TEXT="a classe decorator deve ter uma composi&#xe7;&#xe3;o formada por um parametro do tipo &quot;Classe pai&quot; e deve ser inicializado no construtor"/>
+<node CREATED="1557941086526" ID="ID_126238365" MODIFIED="1557941109548" TEXT="A classe decorator adiciona responsabilidades/melhorias ao objeto da classe original"/>
+<node CREATED="1557941110320" ID="ID_1427760222" MODIFIED="1557941159979" TEXT="Definir uma classe que deviva da classe decorator, para todos as melhorias a serem adicionadas"/>
+<node CREATED="1557941161263" ID="ID_1945121631" MODIFIED="1557941218060" TEXT="A classe decorator derivada, deve implementar sua cobertura de melhoria e delegar a classe Decorator pai"/>
+<node CREATED="1557941255326" ID="ID_1639891909" MODIFIED="1557941303260" TEXT="o cliente configura o tipo e a ordem da objeto da classe original e da classe decorator"/>
+</node>
+</node>
+<node CREATED="1557941728030" ID="ID_507217100" MODIFIED="1557941737196" TEXT="Composite"/>
 </node>
 </node>
 </map>
