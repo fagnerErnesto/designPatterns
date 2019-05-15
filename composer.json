@@ -1,0 +1,20 @@
+{
+    "name": "design-patterns",
+    "description": "Study about design patterns (GoF)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fagnerernesto",
+            "email": "fagner.ernesto@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    }
+}
