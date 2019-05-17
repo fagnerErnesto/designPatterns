@@ -100,9 +100,9 @@
 </node>
 </node>
 <node CREATED="1557324103203" ID="ID_589500037" MODIFIED="1557324655309" TEXT="checklist">
-<node CREATED="1557324120131" ID="ID_1412966503" MODIFIED="1557324167297" TEXT="decidir se a &quot;independencia da plataforma&quot; e crea&#xe7;&#xe3;o de servi&#xe7;os s&#xe3;o as dores atuais do c&#xf3;digo"/>
+<node CREATED="1557324120131" ID="ID_1412966503" MODIFIED="1558094274665" TEXT="decidir se a &quot;independencia da plataforma&quot; e cria&#xe7;&#xe3;o de servi&#xe7;os s&#xe3;o as dores atuais do c&#xf3;digo"/>
 <node CREATED="1557324168613" ID="ID_856580205" MODIFIED="1557324202433" TEXT="Mapear a matriz da &quot;plataforma&quot; versus &quot;produto&quot;"/>
-<node CREATED="1557324203699" ID="ID_412154375" MODIFIED="1557324317152" TEXT="Defina uma factory interface que consiste em um m&#xe9;todo de factory (que cria) por produto."/>
+<node CREATED="1557324203699" ID="ID_412154375" MODIFIED="1558094302923" TEXT="Defina uma factory interface que consiste em um m&#xe9;todo de factory (que cria o objeto) por produto."/>
 <node CREATED="1557324358050" ID="ID_1033016368" MODIFIED="1557324413186" TEXT="Definir uma factory class derivada da interface factory, para cada plataforma que encapsula todas as refer&#xea;ncias ao operador new"/>
 <node CREATED="1557324415205" ID="ID_580420011" MODIFIED="1557324586818" TEXT="O cliente deve retirar todas as refer&#xea;ncias do operador new, e usar os m&#xe9;todos factory para criar novos produtos"/>
 </node>
@@ -121,7 +121,7 @@
 <node CREATED="1556806940948" ID="ID_1964163411" MODIFIED="1556808655521" TEXT="constroi a representa&#xe7;&#xe3;o passo a passo, geralmente chamado por outra classe"/>
 <node CREATED="1556808726537" ID="ID_340509374" MODIFIED="1556808757126" TEXT="boa op&#xe7;&#xe3;o para quando existem processos e/ou etapas complexas para a produ&#xe7;&#xe3;o de um produto final"/>
 <node CREATED="1557326766879" ID="ID_316290338" MODIFIED="1557326786098" TEXT="o fluxo s&#xf3; termina quando todos os objetos da representa&#xe7;&#xe3;o s&#xe3;o gerados"/>
-<node CREATED="1557326787316" ID="ID_1185378600" MODIFIED="1557326790401" TEXT="checklist">
+<node CREATED="1557326787316" HGAP="26" ID="ID_1185378600" MODIFIED="1558094451195" TEXT="checklist" VSHIFT="11">
 <node CREATED="1557326796196" ID="ID_156288796" MODIFIED="1557326855281" TEXT="Decidir se uma entrada comum e muitas represeta&#xe7;&#xf5;es poss&#xed;veis (ou sa&#xed;das) s&#xe3;o o problema"/>
 <node CREATED="1557326865125" ID="ID_284189750" MODIFIED="1557326946578" TEXT="Encapsular a an&#xe1;lise da entrada comum em uma classe &quot;Reader&quot;"/>
 <node CREATED="1557326948227" ID="ID_1445473123" MODIFIED="1557327005185" TEXT="Planejar um protocolo padr&#xe3;o para criar todas as possibilidades de sa&#xed;da">
@@ -132,7 +132,7 @@
 <node CREATED="1557327341314" ID="ID_1346115409" MODIFIED="1557327375570" TEXT="O cliente solicita a constru&#xe7;&#xe3;o do Reader"/>
 <node CREATED="1557327376533" ID="ID_1866914866" MODIFIED="1557327406641" TEXT="O cliente  solicita o Builder para retornar o resultado"/>
 </node>
-<node CREATED="1557327413477" ID="ID_363507578" MODIFIED="1557327417248" TEXT="Exemplo">
+<node CREATED="1557327413477" HGAP="33" ID="ID_363507578" MODIFIED="1558094454754" TEXT="Exemplo" VSHIFT="23">
 <node CREATED="1557327418515" ID="ID_80012551" MODIFIED="1557327428177" TEXT="Pedido no fast-food">
 <node CREATED="1557327429907" ID="ID_1862078319" MODIFIED="1557327444690" TEXT="Cada item do combo &#xe9; uma representa&#xe7;&#xe3;o"/>
 <node CREATED="1557327445764" ID="ID_924568079" MODIFIED="1557327489633" TEXT="O cliente (Reader) s&#xf3; recebe o combo, depois que a cozinha (Builder) prepara todos os itens do combo"/>
@@ -145,7 +145,7 @@
 <node CREATED="1556888249783" ID="ID_1766398817" MODIFIED="1556888306358" TEXT="t&#xe9;cnica pode ser utilizada para criar v&#xe1;rias objetos a partir de uma nova inst&#xe2;ncia ao salvar uma lista de itens relacionados a outro"/>
 <node CREATED="1557146800198" ID="ID_1358219747" MODIFIED="1557146833204" TEXT="&#xe9; mais r&#xe1;pido que criar uma nova inst&#xe2;ncia do mesmo objeto"/>
 <node CREATED="1557146834566" ID="ID_1440781700" MODIFIED="1557146865837" TEXT="o consumo de mem&#xf3;ria &#xe9; maior que a cria&#xe7;&#xe3;o de inst&#xe2;ncia"/>
-<node CREATED="1557756273729" ID="ID_1029402849" MODIFIED="1557756311855" TEXT="O m&#xe9;todo &quot;clone&quot; deve ser adicionado ao uma hierarquia de &quot;produtos&quot; existentes"/>
+<node CREATED="1557756273729" ID="ID_1029402849" MODIFIED="1558096606411" TEXT="O m&#xe9;todo &quot;clone&quot; deve ser adicionado a uma hierarquia de &quot;produtos&quot; existentes"/>
 <node CREATED="1557756824836" ID="ID_1450759165" MODIFIED="1557756842479" TEXT="N&#xe3;o necessita de subclasses, por&#xe9;m precisa ser inicializado"/>
 </node>
 </node>
@@ -201,16 +201,16 @@
 <node CREATED="1557314247859" ID="ID_789759031" MODIFIED="1557314284082" TEXT="fornecer um substituto (surrogate) ou marcador da loca&#xe7;&#xe3;o de outro objeto"/>
 <node CREATED="1557314285060" ID="ID_513878024" MODIFIED="1557314309970" TEXT="controlar acesso a um determinado objeto"/>
 <node CREATED="1557314314021" ID="ID_1155852610" MODIFIED="1557314327458" TEXT="um objeto que representa outro"/>
+<node CREATED="1557844954623" ID="ID_195665539" MODIFIED="1557845016350" TEXT="fornece uma &#xfa;nica interface para as classes empacotador (classe proxy) e empacotada (classe original)"/>
 <node CREATED="1557843916367" ID="ID_613388813" MODIFIED="1557843925917" TEXT="4 situa&#xe7;&#xf5;es comuns de uso">
 <node CREATED="1557843947406" ID="ID_684649549" MODIFIED="1557843972141" TEXT="instanciar objetos de cria&#xe7;&#xe3;o complexa/cara">
 <node CREATED="1557843975857" ID="ID_243394598" MODIFIED="1557843998814" TEXT="o objeto s&#xf3; &#xe9; criado no seu primeiro acesso/requisi&#xe7;&#xe3;o"/>
 </node>
-<node CREATED="1557844000143" ID="ID_1116568979" MODIFIED="1557844058077" TEXT="um representa&#xe7;&#xe3;o local de objetos que est&#xe3;o em outro servidor/endere&#xe7;o"/>
+<node CREATED="1557844000143" ID="ID_1116568979" MODIFIED="1558100906666" TEXT="uma representa&#xe7;&#xe3;o local de objetos que est&#xe3;o em outro servidor/endere&#xe7;o"/>
 <node CREATED="1557844059743" ID="ID_50972570" MODIFIED="1557844145405" TEXT="controle de acesso a uma objeto master considerado sensivel, verifica se o &quot;chamador&quot; pode acessar integral ou parcialmente um determinado objeto"/>
 <node CREATED="1557844161649" ID="ID_1981499244" MODIFIED="1557844182477" TEXT="adicionar a&#xe7;&#xf5;es inteligentes um objeto acessado"/>
 </node>
-<node CREATED="1557844954623" ID="ID_195665539" MODIFIED="1557845016350" TEXT="fornece uma &#xfa;nica interface para as classes empacotador (classe proxy) e empacotada (classe original)"/>
-<node CREATED="1557844336064" ID="ID_220011757" MODIFIED="1557844339357" TEXT="checklist">
+<node CREATED="1557844336064" HGAP="28" ID="ID_220011757" MODIFIED="1558101733290" TEXT="checklist" VSHIFT="36">
 <node CREATED="1557844401662" ID="ID_658816827" MODIFIED="1557844510398" TEXT="Identificar a influ&#xea;ncia ou aspecto para implemntar como um &quot;empacotador&quot; ou substituto"/>
 <node CREATED="1557844511392" ID="ID_56798276" MODIFIED="1557844556797" TEXT="definir uma interface que fa&#xe7;am o proxy e o componente original serem compat&#xed;veis"/>
 <node CREATED="1557844558192" ID="ID_13568073" MODIFIED="1557844658942" TEXT="Considerar a defini&#xe7;&#xe3;o de uma Factory para decidir se ser&#xe1; usado o objeto proxy ou o original"/>
@@ -219,10 +219,10 @@
 <node CREATED="1557844876943" ID="ID_142537674" MODIFIED="1557844925069" TEXT="cada m&#xe9;todo empacotador contribui com sua cobertura, e delega ao objeto empacotado"/>
 </node>
 </node>
-<node CREATED="1557924167950" ID="ID_960229234" MODIFIED="1557924171165" TEXT="Decorator">
+<node CREATED="1557924167950" HGAP="28" ID="ID_960229234" MODIFIED="1558101738410" TEXT="Decorator" VSHIFT="31">
 <node CREATED="1557924172528" ID="ID_1293005231" MODIFIED="1557924195708" TEXT="Forma de adicionar funcionalidades/responsabilidades a um objeto dinamicamente"/>
 <node CREATED="1557940661293" ID="ID_342955" MODIFIED="1557940680573" TEXT="Fornece uma interface melhorada da interface comum"/>
-<node CREATED="1557940681967" ID="ID_358514141" MODIFIED="1557940724332" TEXT="A classe decorator herda a mesca classe pai da classe a ser manipulada"/>
+<node CREATED="1557940681967" ID="ID_358514141" MODIFIED="1558102146603" TEXT="A classe decorator herda a mesma classe pai da classe a ser manipulada"/>
 <node CREATED="1557941322575" ID="ID_1442714921" MODIFIED="1557941369724" TEXT="Decorator melhora as responsabilidades do objeto">
 <node CREATED="1557941370895" ID="ID_1136027481" MODIFIED="1557941379452" TEXT="&#xe9; mais transparente para o cliente"/>
 <node CREATED="1557941379872" ID="ID_137852821" MODIFIED="1557941397820" TEXT="suporta composi&#xe7;&#xe3;o recursiva">
@@ -232,7 +232,7 @@
 <node CREATED="1557941585597" ID="ID_1163962759" MODIFIED="1557941630953" TEXT="&#xe9; planejado para adicionar responsabilidade ao objeto se necessidade de subclasses da classe original"/>
 <node CREATED="1557940727055" ID="ID_104881273" MODIFIED="1557940732603" TEXT="checklist">
 <node CREATED="1557940733869" ID="ID_1248815402" MODIFIED="1557940750460" TEXT="garantir que o contexto &#xe9;">
-<node CREATED="1557940751501" ID="ID_378745796" MODIFIED="1557940782556" TEXT="componente com uma &#xfa;nica implementa&#xe7;&#xe3;o"/>
+<node CREATED="1557940751501" ID="ID_378745796" MODIFIED="1558102200475" TEXT="composto com uma &#xfa;nica implementa&#xe7;&#xe3;o"/>
 <node CREATED="1557940773837" ID="ID_1216691819" MODIFIED="1557940806956" TEXT="com v&#xe1;rias op&#xe7;&#xf5;es de melhorias ou responsabilidades"/>
 <node CREATED="1557940807327" ID="ID_1165155006" MODIFIED="1557940827980" TEXT="e uma interface comum a todas"/>
 </node>
@@ -241,12 +241,30 @@
 <node CREATED="1557940962048" ID="ID_1094919455" MODIFIED="1557940992172" TEXT="A classe original e a classe decorator devem herdar da mesma classe pai"/>
 <node CREATED="1557941007966" ID="ID_1748684782" MODIFIED="1557941047869" TEXT="a classe decorator deve ter uma composi&#xe7;&#xe3;o formada por um parametro do tipo &quot;Classe pai&quot; e deve ser inicializado no construtor"/>
 <node CREATED="1557941086526" ID="ID_126238365" MODIFIED="1557941109548" TEXT="A classe decorator adiciona responsabilidades/melhorias ao objeto da classe original"/>
-<node CREATED="1557941110320" ID="ID_1427760222" MODIFIED="1557941159979" TEXT="Definir uma classe que deviva da classe decorator, para todos as melhorias a serem adicionadas"/>
+<node CREATED="1557941110320" ID="ID_1427760222" MODIFIED="1558102347897" TEXT="Definir uma classe que deriva da classe decorator, para todos as melhorias a serem adicionadas"/>
 <node CREATED="1557941161263" ID="ID_1945121631" MODIFIED="1557941218060" TEXT="A classe decorator derivada, deve implementar sua cobertura de melhoria e delegar a classe Decorator pai"/>
-<node CREATED="1557941255326" ID="ID_1639891909" MODIFIED="1557941303260" TEXT="o cliente configura o tipo e a ordem da objeto da classe original e da classe decorator"/>
+<node CREATED="1557941255326" ID="ID_1639891909" MODIFIED="1558102377260" TEXT="o cliente configura o tipo e a ordem do objeto da classe original e da classe decorator"/>
 </node>
 </node>
-<node CREATED="1557941728030" ID="ID_507217100" MODIFIED="1557941737196" TEXT="Composite"/>
+<node CREATED="1557941728030" ID="ID_507217100" MODIFIED="1558102387315" TEXT="Composite" VSHIFT="31">
+<node CREATED="1558104066045" ID="ID_155240520" MODIFIED="1558104098570" TEXT="compor objetos em estruturas de &#xe1;rvore para representarem hierarquias todo-parte"/>
+<node CREATED="1558116080509" ID="ID_671307867" MODIFIED="1558116090410" TEXT="composi&#xe7;&#xe3;o recursiva"/>
+<node CREATED="1558116162540" ID="ID_1837641185" MODIFIED="1558116208200" TEXT="rela&#xe7;&#xe3;o: 1,,* &quot;has a&quot; acima de &quot;is a&quot;"/>
+<node CREATED="1558117891258" ID="ID_180174109" MODIFIED="1558117943386" TEXT="pode usar uma &quot;cadeia de responsabilidade&quot; para acessar atributos do pai"/>
+<node CREATED="1558118038108" ID="ID_562808617" MODIFIED="1558118065081" TEXT="tem foco na representa&#xe7;&#xe3;o ao inv&#xe9;s do &quot;embelezamento&quot;, como no decorator"/>
+<node CREATED="1558118074062" ID="ID_558492833" MODIFIED="1558118099098" TEXT="Tem estrutura similar ao Decorator"/>
+<node CREATED="1558116785836" ID="ID_1322669784" MODIFIED="1558116795002" TEXT="check list">
+<node CREATED="1558116825421" ID="ID_1359342169" MODIFIED="1558116894971" TEXT="garantir que seu problema seja uma representa&#xe7;&#xe3;o de uma rela&#xe7;&#xe3;o hierarquica de  &quot;todo-parte&quot;"/>
+<node CREATED="1558116103662" ID="ID_1053730800" MODIFIED="1558118160647" TEXT="&quot;containers podem conter coisas que podem ser containers&quot;"/>
+<node CREATED="1558116897004" ID="ID_863438496" MODIFIED="1558117017738" TEXT="criar uma interface comum que defina o comportamento uniforme atrav&#xe9;s de todos os contidos e containers"/>
+<node CREATED="1558117031038" ID="ID_1733007776" MODIFIED="1558117079355" TEXT="a classe original e a classe de composi&#xe7;&#xe3;o devem ter relacionamento &quot;is a&quot; com a interface comum"/>
+<node CREATED="1558117100894" ID="ID_1825542200" MODIFIED="1558117124074" TEXT="a classe de composi&#xe7;&#xe3;o deve ter um relacionamento &quot;has a&quot; com a interface comum"/>
+<node CREATED="1558117189740" ID="ID_457873826" MODIFIED="1558117230389" TEXT="A classe container influencia o polimorfismo para os objetos da classe contida"/>
+<node CREATED="1558117232204" ID="ID_1575110632" MODIFIED="1558117427480" TEXT="normalmente os m&#xe9;todos de gerenciamento dos filhos s&#xe3;o definidos na classe de composi&#xe7;&#xe3;o (add e remove)">
+<node CREATED="1558117434844" ID="ID_1934441838" MODIFIED="1558118263352" TEXT="existe um discuss&#xe3;o sobre isso para que essa m&#xe9;todos seja definidos na interface comum entre as classes, por&#xe9;m obrigaria a classe containee implementar m&#xe9;todos que n&#xe3;o ser&#xe3;o necess&#xe1;rios. (safety vs transparency)"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
