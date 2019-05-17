@@ -265,6 +265,21 @@
 </node>
 </node>
 </node>
+<node CREATED="1558122742413" ID="ID_371610219" MODIFIED="1558122749355" TEXT="Facade">
+<node CREATED="1558122750605" ID="ID_345918020" MODIFIED="1558122775515" TEXT="Fornecer uma interface unificada para um conjunto de interfaces em um subsistema"/>
+<node CREATED="1558122782046" ID="ID_1635767061" MODIFIED="1558122801962" TEXT="interface exposta ao cliente para facilitar o uso de um subsistema"/>
+<node CREATED="1558122802617" ID="ID_1798792901" MODIFIED="1558122820746" TEXT="1 classe pode representar um subsistema inteiro"/>
+<node CREATED="1558122991548" ID="ID_1798494693" MODIFIED="1558123003546" TEXT="deve ser um classe facilitadora"/>
+<node CREATED="1558123006412" ID="ID_1994385800" MODIFIED="1558123020571" TEXT="n&#xe3;o deve ser uma classe faz  tudo"/>
+<node CREATED="1558123395822" ID="ID_1907139504" MODIFIED="1558123883338" TEXT="ir&#xe1; definir uma nova interface, diferente do adapter que adapta duas interfaces diferentes para trabalharem juntas"/>
+<node CREATED="1558123188332" ID="ID_286038743" MODIFIED="1558123194315" TEXT="check list">
+<node CREATED="1558123195276" ID="ID_1023636998" MODIFIED="1558123231690" TEXT="Identificar uma simples e unificada interface para os componentes e subsistemas"/>
+<node CREATED="1558123233950" ID="ID_14715970" MODIFIED="1558123256490" TEXT="projetar uma classe de cobertura para encapsular o subsistema"/>
+<node CREATED="1558123257021" ID="ID_1478469474" MODIFIED="1558123299386" TEXT="capturar a complexidade e a colabora&#xe7;&#xe3;o dos componentes e delegar aos m&#xe9;todos apropriados"/>
+<node CREATED="1558123300189" ID="ID_123308879" MODIFIED="1558123330458" TEXT="O cliente somente usa o Facade"/>
+<node CREATED="1558123336269" ID="ID_245703374" MODIFIED="1558123940219" TEXT="Considerar adicionar outros Facades que criem valor a integra&#xe7;&#xe3;o"/>
+</node>
+</node>
 </node>
 </node>
 </map>
