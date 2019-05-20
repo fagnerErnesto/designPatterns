@@ -51,6 +51,15 @@
 <node CREATED="1558354327759" ID="ID_637079011" MODIFIED="1558354337944" TEXT="&#xe9; fornecido &#xe0; classe"/>
 </node>
 </node>
+<node CREATED="1558364463881" ID="ID_1768248117" MODIFIED="1558364485111" TEXT="explica quando e como o estado do objeto pode ser compartilhado"/>
+<node CREATED="1558364210585" ID="ID_1321275501" MODIFIED="1558364215321" TEXT="check list">
+<node CREATED="1558364216379" ID="ID_772154474" MODIFIED="1558364218040" TEXT="Assegure-se de que a sobrecarga de objeto seja um problema que precise de aten&#xe7;&#xe3;o e que o cliente da classe seja capaz e esteja disposto a absorver o realinhamento de responsabilidade."/>
+<node CREATED="1558364245369" ID="ID_1338673193" MODIFIED="1558364247304" TEXT="Divida o estado da classe de destino em: estado compartilh&#xe1;vel (intr&#xed;nseco) e estado n&#xe3;o compartilh&#xe1;vel (extr&#xed;nseco)."/>
+<node CREATED="1558364296954" ID="ID_429389817" MODIFIED="1558364298642" TEXT="Remova o estado n&#xe3;o compartilh&#xe1;vel dos atributos de classe e inclua a lista de argumentos de chamada dos m&#xe9;todos afetados."/>
+<node CREATED="1558364322618" ID="ID_788410974" MODIFIED="1558364323800" TEXT="Crie um Factory que possa armazenar em cache e reutilizar inst&#xe2;ncias de classe existentes."/>
+<node CREATED="1558364338010" ID="ID_660859602" MODIFIED="1558364353512" TEXT="O cliente deve usar o Factory em vez do novo operador para solicitar objetos."/>
+<node CREATED="1558364354809" ID="ID_1280594874" MODIFIED="1558364410744" TEXT="O cliente (ou um terceiro) deve pesquisar ou calcular o estado n&#xe3;o compartilh&#xe1;vel e fornecer esse estado aos m&#xe9;todos de classe."/>
+</node>
 </node>
 <node CREATED="1557146972112" ID="ID_642828180" MODIFIED="1557146975204" POSITION="right" TEXT="bridge">
 <node CREATED="1557236729269" MODIFIED="1557758106655" TEXT="Tem objetivo de separar a representa&#xe7;&#xe3;o da implementa&#xe7;&#xe3;o"/>

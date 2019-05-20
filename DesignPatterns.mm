@@ -32,7 +32,8 @@
 <node CREATED="1556628753338" ID="ID_1904540704" MODIFIED="1556629337448" TEXT="consequ&#xea;ncias"/>
 </node>
 </node>
-<node CREATED="1558354947372" ID="ID_1000256725" LINK="DesignPatternsGrupoCriacional.mm" MODIFIED="1558354947373" POSITION="left" TEXT="grupo criacional"/>
-<node CREATED="1558351249352" ID="ID_802545" LINK="DesignPatternsGrupoEstrutural.mm" MODIFIED="1558351249352" POSITION="left" TEXT="grupo estrutural"/>
+<node CREATED="1558354947372" ID="ID_1000256725" LINK="DesignPatternsGrupoCriacional.mm" MODIFIED="1558363368184" POSITION="left" TEXT="Grupo Criacional"/>
+<node CREATED="1558351249352" ID="ID_802545" LINK="DesignPatternsGrupoEstrutural.mm" MODIFIED="1558363359842" POSITION="left" TEXT="Grupo Estrutural"/>
+<node CREATED="1558363336612" ID="ID_409642135" LINK="DesignPatternsGrupoComportamental.mm" MODIFIED="1558363349687" POSITION="left" TEXT="Grupo Comportamental"/>
 </node>
 </map>
