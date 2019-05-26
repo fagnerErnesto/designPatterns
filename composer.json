@@ -1,5 +1,5 @@
 {
-    "name": "design-patterns",
+    "name": "fagner/design-patterns",
     "description": "Study about design patterns (GoF)",
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7"
+        "php": ">=7.1"
     },
     "autoload": {
         "psr-4": {
