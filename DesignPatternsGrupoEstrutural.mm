@@ -24,12 +24,12 @@
 <node CREATED="1558122750605" MODIFIED="1558122775515" TEXT="Fornecer uma interface unificada para um conjunto de interfaces em um subsistema"/>
 <node CREATED="1558122782046" MODIFIED="1558122801962" TEXT="interface exposta ao cliente para facilitar o uso de um subsistema"/>
 <node CREATED="1558122802617" MODIFIED="1558122820746" TEXT="1 classe pode representar um subsistema inteiro"/>
-<node CREATED="1558122991548" MODIFIED="1558123003546" TEXT="deve ser um classe facilitadora"/>
+<node CREATED="1558122991548" ID="ID_443230677" MODIFIED="1559247247622" TEXT="deve ser uma classe facilitadora"/>
 <node CREATED="1558123006412" MODIFIED="1558123020571" TEXT="n&#xe3;o deve ser uma classe faz  tudo"/>
 <node CREATED="1558123395822" MODIFIED="1558123883338" TEXT="ir&#xe1; definir uma nova interface, diferente do adapter que adapta duas interfaces diferentes para trabalharem juntas"/>
 <node CREATED="1558351065162" MODIFIED="1558351072680" TEXT="consequ&#xea;cia">
 <node CREATED="1558351073579" MODIFIED="1558351077768" TEXT="baixa coes&#xe3;o"/>
-<node CREATED="1558351078474" MODIFIED="1558351097384" TEXT="os m&#xe9;todos do facade pode ficar sobrecarregados"/>
+<node CREATED="1558351078474" ID="ID_382222152" MODIFIED="1559247275165" TEXT="os m&#xe9;todos do facade podem ficar sobrecarregados"/>
 </node>
 <node CREATED="1558123188332" MODIFIED="1558123194315" TEXT="check list">
 <node CREATED="1558123195276" MODIFIED="1558123231690" TEXT="Identificar uma simples e unificada interface para os componentes e subsistemas"/>
@@ -81,7 +81,7 @@
 </node>
 <node CREATED="1557759659138" MODIFIED="1557759664702" TEXT="consequ&#xea;ncias">
 <node CREATED="1557759687250" MODIFIED="1557759706219" TEXT="desacoplar os objetos da interface"/>
-<node CREATED="1557759707378" MODIFIED="1557759729359" TEXT="aumentar a extencibilidade">
+<node CREATED="1557759707378" ID="ID_1420207258" MODIFIED="1559245908750" TEXT="aumentar a extensibilidade">
 <node CREATED="1557759736705" MODIFIED="1557759772349" TEXT="voc&#xea; pode extender  a hierarquia de abstra&#xe7;&#xe3;o e implementa&#xe7;&#xe3;o independentemente"/>
 </node>
 <node CREATED="1557759777568" MODIFIED="1557759782334" TEXT="esconde detalhes do cliente"/>
@@ -127,7 +127,7 @@
 <node CREATED="1557844558192" MODIFIED="1557844658942" TEXT="Considerar a defini&#xe7;&#xe3;o de uma Factory para decidir se ser&#xe1; usado o objeto proxy ou o original"/>
 <node CREATED="1557844691151" MODIFIED="1557844775933" TEXT="a classe empacotadora agrega a classe original e implementa a interface comum &#xe0;s duas classes"/>
 <node CREATED="1557844795614" MODIFIED="1557844822926" TEXT="a classe original deve ser inicializada no construtor ou na primeira chamada"/>
-<node CREATED="1557844876943" MODIFIED="1557844925069" TEXT="cada m&#xe9;todo empacotador contribui com sua cobertura, e delega ao objeto empacotado"/>
+<node CREATED="1557844876943" ID="ID_1581468850" MODIFIED="1559246677036" TEXT="cada m&#xe9;todo empacotador contribui com sua cobertura, e delega ao objeto empacotado a execu&#xe7;&#xe3;o da a&#xe7;&#xe3;o"/>
 </node>
 </node>
 <node CREATED="1557924167950" HGAP="28" ID="ID_6281569" MODIFIED="1558101738410" POSITION="right" TEXT="Decorator" VSHIFT="31">
@@ -140,20 +140,20 @@
 <node CREATED="1557941408271" MODIFIED="1557941419286" TEXT="isso n&#xe3;o &#xe9; poss&#xed;vel aplicar no Adapter"/>
 </node>
 </node>
-<node CREATED="1557941585597" MODIFIED="1557941630953" TEXT="&#xe9; planejado para adicionar responsabilidade ao objeto se necessidade de subclasses da classe original"/>
+<node CREATED="1557941585597" ID="ID_1837620663" MODIFIED="1559246890721" TEXT="&#xe9; planejado para adicionar responsabilidade ao objeto sem a necessidade de subclasses da classe original"/>
 <node CREATED="1557940727055" MODIFIED="1557940732603" TEXT="checklist">
 <node CREATED="1557940733869" MODIFIED="1557940750460" TEXT="garantir que o contexto &#xe9;">
 <node CREATED="1557940751501" MODIFIED="1558102200475" TEXT="composto com uma &#xfa;nica implementa&#xe7;&#xe3;o"/>
 <node CREATED="1557940773837" MODIFIED="1557940806956" TEXT="com v&#xe1;rias op&#xe7;&#xf5;es de melhorias ou responsabilidades"/>
 <node CREATED="1557940807327" MODIFIED="1557940827980" TEXT="e uma interface comum a todas"/>
 </node>
-<node CREATED="1557940831694" MODIFIED="1557940904427" TEXT="criar uma interface com baixo demoninador comum para que todas as classes seja interligadas"/>
+<node CREATED="1557940831694" ID="ID_1017818369" MODIFIED="1559246921950" TEXT="criar uma interface com baixo demoninador comum para que todas as classes sejam interligadas"/>
 <node CREATED="1557940905695" MODIFIED="1557940961340" TEXT="criar uma classe de segundo n&#xed;vel (decorator) para dar suporte as melhorias opcionais"/>
 <node CREATED="1557940962048" MODIFIED="1557940992172" TEXT="A classe original e a classe decorator devem herdar da mesma classe pai"/>
 <node CREATED="1557941007966" MODIFIED="1557941047869" TEXT="a classe decorator deve ter uma composi&#xe7;&#xe3;o formada por um parametro do tipo &quot;Classe pai&quot; e deve ser inicializado no construtor"/>
 <node CREATED="1557941086526" MODIFIED="1557941109548" TEXT="A classe decorator adiciona responsabilidades/melhorias ao objeto da classe original"/>
 <node CREATED="1557941110320" MODIFIED="1558102347897" TEXT="Definir uma classe que deriva da classe decorator, para todos as melhorias a serem adicionadas"/>
-<node CREATED="1557941161263" MODIFIED="1557941218060" TEXT="A classe decorator derivada, deve implementar sua cobertura de melhoria e delegar a classe Decorator pai"/>
+<node CREATED="1557941161263" ID="ID_1373991320" MODIFIED="1557941218060" TEXT="A classe decorator derivada, deve implementar sua cobertura de melhoria e delegar a classe Decorator pai"/>
 <node CREATED="1557941255326" MODIFIED="1558102377260" TEXT="o cliente configura o tipo e a ordem do objeto da classe original e da classe decorator"/>
 </node>
 </node>

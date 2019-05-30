@@ -13,7 +13,7 @@
 </node>
 <node CREATED="1558886444418" ID="ID_1291702306" MODIFIED="1558886448633" TEXT="check list">
 <node CREATED="1558886449264" ID="ID_463164904" MODIFIED="1558886488211" TEXT="Definir uma interface com uma assinatura de m&#xe9;todo chamada execute()"/>
-<node CREATED="1558886489419" ID="ID_440045319" MODIFIED="1558886572934" TEXT="criar uma ou mais subclasses para encapsular as algumas funcionalidades">
+<node CREATED="1558886489419" ID="ID_440045319" MODIFIED="1559247529473" TEXT="criar uma ou mais subclasses para encapsular algumas funcionalidades">
 <node CREATED="1558886573443" ID="ID_1961097728" MODIFIED="1558886590324" TEXT="o objeto que ser&#xe1; injetado"/>
 <node CREATED="1558886590819" ID="ID_133718873" MODIFIED="1558886603639" TEXT="o m&#xe9;todo invocador"/>
 <node CREATED="1558886604612" ID="ID_346801621" MODIFIED="1558886616108" TEXT="os argumentos a serem passados"/>
@@ -51,7 +51,7 @@
 <node CREATED="1559216608830" ID="ID_802314944" MODIFIED="1559216677019" TEXT="Permite mudar o comportamento de um objeto quando seu estado muda"/>
 <node CREATED="1559216679331" ID="ID_1714656247" MODIFIED="1559216760265" TEXT="Uma maquina de estado orientado a objeto"/>
 <node CREATED="1559216761933" ID="ID_144784892" MODIFIED="1559216950590" TEXT="Encapsulamento + encapsulamento polimorfico + colabora&#xe7;&#xe3;o"/>
-<node CREATED="1559216952277" ID="ID_1587530174" MODIFIED="1559219099451" TEXT="A m&#xe1;quina de estado &#xe9; encapsulada na classe pai"/>
+<node CREATED="1559216952277" ID="ID_1587530174" MODIFIED="1559247713501" TEXT="A m&#xe1;quina de estado &#xe9; encapsulada na classe que trata do estado"/>
 <node CREATED="1559219178805" ID="ID_531848190" MODIFIED="1559219690496" TEXT="Cada estado deve ter sua classe, que extende a classe que define a m&#xe1;quina de estado, para implementar o comportamento do objeto."/>
 <node CREATED="1559219929088" ID="ID_1465940378" MODIFIED="1559219946280" TEXT="check list">
 <node CREATED="1559219948460" ID="ID_1365107748" MODIFIED="1559220447836" TEXT="Identifique uma classe ou crie, para que sirva como uma m&#xe1;quina de estado, baseado na perspectiva da classe cliente."/>
@@ -60,8 +60,8 @@
 <node CREATED="1559220746383" ID="ID_1064965174" MODIFIED="1559220779806" TEXT="deve ser especificado o comportamento padr&#xe3;o do objeto em cada representa&#xe7;&#xe3;o de estado."/>
 </node>
 <node CREATED="1559220781448" ID="ID_714042385" MODIFIED="1559220819034" TEXT="Cada classe de estado s&#xf3; deve sobrescrever os m&#xe9;todos necess&#xe1;rios"/>
-<node CREATED="1559220830353" ID="ID_1728957470" MODIFIED="1559220850642" TEXT="A classe do contexto, deve armazenar o estado atual do objeto"/>
-<node CREATED="1559220923170" ID="ID_1202464732" MODIFIED="1559221075420" TEXT="Todas as requisi&#xe7;&#xf5;es a classe de contexto devem ser delegadas ao objeto de estado correspondente e o $this &#xe9; passado como parametro."/>
+<node CREATED="1559220830353" ID="ID_1728957470" MODIFIED="1559247837157" TEXT="A classe de maquina de estado, deve armazenar o estado atual do objeto"/>
+<node CREATED="1559220923170" ID="ID_1202464732" MODIFIED="1559248087897" TEXT="Todas as requisi&#xe7;&#xf5;es a classe de contexto devem ser delegadas ao objeto de maquina de estado correspondente e o $this &#xe9; passado como parametro, para que as representa&#xe7;&#xf5;es do estado possam conhecer o estado atual e, se necess&#xe1;rio, alter&#xe1;-lo e/ou executar sua responsabilidade baseada no estado atual."/>
 <node CREATED="1559221076962" ID="ID_1040103368" MODIFIED="1559221127485" TEXT="o m&#xe9;todo respons&#xe1;vel deve alterar o estado atual na classe de contexto"/>
 </node>
 </node>
