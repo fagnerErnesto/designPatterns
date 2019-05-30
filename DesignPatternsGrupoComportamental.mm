@@ -47,6 +47,24 @@
 <node CREATED="1559062900777" ID="ID_503647919" MODIFIED="1559062966443" TEXT="As subclasse devem extender a interface que define o template de execu&#xe7;&#xe3;o."/>
 </node>
 </node>
+<node CREATED="1559216570172" ID="ID_1472745905" MODIFIED="1559216574852" POSITION="right" TEXT="State">
+<node CREATED="1559216608830" ID="ID_802314944" MODIFIED="1559216677019" TEXT="Permite mudar o comportamento de um objeto quando seu estado muda"/>
+<node CREATED="1559216679331" ID="ID_1714656247" MODIFIED="1559216760265" TEXT="Uma maquina de estado orientado a objeto"/>
+<node CREATED="1559216761933" ID="ID_144784892" MODIFIED="1559216950590" TEXT="Encapsulamento + encapsulamento polimorfico + colabora&#xe7;&#xe3;o"/>
+<node CREATED="1559216952277" ID="ID_1587530174" MODIFIED="1559219099451" TEXT="A m&#xe1;quina de estado &#xe9; encapsulada na classe pai"/>
+<node CREATED="1559219178805" ID="ID_531848190" MODIFIED="1559219690496" TEXT="Cada estado deve ter sua classe, que extende a classe que define a m&#xe1;quina de estado, para implementar o comportamento do objeto."/>
+<node CREATED="1559219929088" ID="ID_1465940378" MODIFIED="1559219946280" TEXT="check list">
+<node CREATED="1559219948460" ID="ID_1365107748" MODIFIED="1559220447836" TEXT="Identifique uma classe ou crie, para que sirva como uma m&#xe1;quina de estado, baseado na perspectiva da classe cliente."/>
+<node CREATED="1559220485442" ID="ID_809197980" MODIFIED="1559220669665" TEXT="Criar uma classe base de status que replica os m&#xe9;todos da inteface de maquina de estado">
+<node CREATED="1559220670739" ID="ID_719094857" MODIFIED="1559220730066" TEXT="Cada m&#xe9;todo deve receber um parametro adicional que representa uma inst&#xe2;ncia da classe que deve ser modificada de acordo com o estado atual"/>
+<node CREATED="1559220746383" ID="ID_1064965174" MODIFIED="1559220779806" TEXT="deve ser especificado o comportamento padr&#xe3;o do objeto em cada representa&#xe7;&#xe3;o de estado."/>
+</node>
+<node CREATED="1559220781448" ID="ID_714042385" MODIFIED="1559220819034" TEXT="Cada classe de estado s&#xf3; deve sobrescrever os m&#xe9;todos necess&#xe1;rios"/>
+<node CREATED="1559220830353" ID="ID_1728957470" MODIFIED="1559220850642" TEXT="A classe do contexto, deve armazenar o estado atual do objeto"/>
+<node CREATED="1559220923170" ID="ID_1202464732" MODIFIED="1559221075420" TEXT="Todas as requisi&#xe7;&#xf5;es a classe de contexto devem ser delegadas ao objeto de estado correspondente e o $this &#xe9; passado como parametro."/>
+<node CREATED="1559221076962" ID="ID_1040103368" MODIFIED="1559221127485" TEXT="o m&#xe9;todo respons&#xe1;vel deve alterar o estado atual na classe de contexto"/>
+</node>
+</node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
 </node>
 </map>
