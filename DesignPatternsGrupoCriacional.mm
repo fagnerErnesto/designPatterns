@@ -72,9 +72,9 @@
 <node CREATED="1557756824836" MODIFIED="1557756842479" TEXT="N&#xe3;o necessita de subclasses, por&#xe9;m precisa ser inicializado"/>
 </node>
 <node CREATED="1556629256364" ID="ID_1291957849" MODIFIED="1556645576026" POSITION="right" TEXT="singleton" VSHIFT="-26">
-<node CREATED="1556629354234" MODIFIED="1556797537108" TEXT="garantir que uma classe tenha apenas uma inst&#xe2;ncia em todo o sistema, com ponto global de acesso."/>
+<node CREATED="1556629354234" ID="ID_1946665960" MODIFIED="1562156772204" TEXT="garantir que uma classe tenha apenas uma inst&#xe2;ncia em todo o fluxo, com ponto global de acesso."/>
 <node CREATED="1557757239617" MODIFIED="1557757251375" TEXT="deve ser considerada apenas se:">
-<node CREATED="1557757324691" MODIFIED="1557757326495" TEXT="A propriedade da inst&#xe2;ncia &#xfa;nica n&#xe3;o pode ser atribu&#xed;da de forma razo&#xe1;vel"/>
+<node CREATED="1557757324691" ID="ID_1625303618" MODIFIED="1562156795741" TEXT="A propriedade da inst&#xe2;ncia &#xfa;nica n&#xe3;o puder ser atribu&#xed;da de forma razo&#xe1;vel"/>
 <node CREATED="1557757327633" MODIFIED="1557757355578" TEXT="Se a inicializa&#xe7;&#xe3;o tardia for desejada"/>
 </node>
 <node CREATED="1556629300764" MODIFIED="1556629305961" TEXT="problema">

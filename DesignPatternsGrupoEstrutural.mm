@@ -95,7 +95,7 @@
 <node CREATED="1557841108257" HGAP="28" MODIFIED="1557841599351" TEXT="faz as coisas funcionarem depois que s&#xe3;o projetadas" VSHIFT="-8"/>
 <node CREATED="1557841244767" MODIFIED="1557841246590" TEXT="&#xe9; reformada para fazer classes n&#xe3;o relacionadas trabalharem juntas."/>
 <node CREATED="1557840584303" MODIFIED="1557840589245" TEXT="checklist">
-<node CREATED="1557840590337" MODIFIED="1557840610093" TEXT="Identificar o &quot;jogadores&quot;">
+<node CREATED="1557840590337" ID="ID_1758676279" MODIFIED="1562157853494" TEXT="Identificar oS &quot;jogadores&quot;">
 <node CREATED="1557840610976" MODIFIED="1557840655277" TEXT="componente que precisar ser acomodado"/>
 <node CREATED="1557840655825" MODIFIED="1557840662669" TEXT="componente que precisa ser adaptado"/>
 </node>
@@ -103,7 +103,7 @@
 <node CREATED="1557840701520" MODIFIED="1557840772061" TEXT="projetar uma classe que pode cobrir a correspondencia: o adaptador para o cliente."/>
 <node CREATED="1557840856126" MODIFIED="1557840979774" TEXT="o adaptador">
 <node CREATED="1557840981152" MODIFIED="1557840982706" TEXT="&quot;tem uma&quot; inst&#xe2;ncia do adaptado"/>
-<node CREATED="1557840983791" MODIFIED="1557841023165" TEXT="mapeia a interface do cliente para o interface do adaptado"/>
+<node CREATED="1557840983791" ID="ID_897693921" MODIFIED="1562157894152" TEXT="mapeia a interface do cliente para a interface do adaptado"/>
 </node>
 <node CREATED="1557841043184" MODIFIED="1557841074917" TEXT="O cliente usa a interface do adaptador"/>
 </node>
@@ -122,7 +122,7 @@
 <node CREATED="1557844161649" MODIFIED="1557844182477" TEXT="adicionar a&#xe7;&#xf5;es inteligentes um objeto acessado"/>
 </node>
 <node CREATED="1557844336064" HGAP="28" MODIFIED="1558101733290" TEXT="checklist" VSHIFT="36">
-<node CREATED="1557844401662" MODIFIED="1557844510398" TEXT="Identificar a influ&#xea;ncia ou aspecto para implemntar como um &quot;empacotador&quot; ou substituto"/>
+<node CREATED="1557844401662" ID="ID_1211854331" MODIFIED="1562158046870" TEXT="Identificar a influ&#xea;ncia ou aspecto para implementar como um &quot;empacotador&quot; ou substituto"/>
 <node CREATED="1557844511392" MODIFIED="1557844556797" TEXT="definir uma interface que fa&#xe7;am o proxy e o componente original serem compat&#xed;veis"/>
 <node CREATED="1557844558192" MODIFIED="1557844658942" TEXT="Considerar a defini&#xe7;&#xe3;o de uma Factory para decidir se ser&#xe1; usado o objeto proxy ou o original"/>
 <node CREATED="1557844691151" MODIFIED="1557844775933" TEXT="a classe empacotadora agrega a classe original e implementa a interface comum &#xe0;s duas classes"/>
