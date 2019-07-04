@@ -94,6 +94,15 @@
 <node CREATED="1559569818090" ID="ID_1514344090" MODIFIED="1559569856998" TEXT="O Subject talvez envie informa&#xe7;&#xe3;o ao Observer ou o Observer talvez busque informa&#xe7;&#xf5;es necess&#xe1;rias do Subject"/>
 </node>
 </node>
+<node CREATED="1559918767931" ID="ID_1094061249" MODIFIED="1559918772714" POSITION="right" TEXT="Mediator">
+<node CREATED="1560166140683" ID="ID_846957600" MODIFIED="1560166167783" TEXT="Encapsula a forma como um conjunto de objetos interage"/>
+<node CREATED="1560166028729" ID="ID_666832213" MODIFIED="1560166045704" TEXT="Definir uma comunica&#xe7;&#xe3;o simplificada entre as classes"/>
+<node CREATED="1560166049188" ID="ID_1036403098" MODIFIED="1560166081682" TEXT="Promove um acoplamento fraco entre objetos">
+<node CREATED="1560166082955" ID="ID_1367743442" MODIFIED="1560166102984" TEXT="Evita que os objetos se refiram uns aos outros explicitamente"/>
+<node CREATED="1560166103993" ID="ID_1517749598" MODIFIED="1560166127463" TEXT="Permite v&#xe1;rias intera&#xe7;&#xf5;es independentes"/>
+</node>
+<node CREATED="1560166176665" ID="ID_916551831" MODIFIED="1560166176665" TEXT=""/>
+</node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
 </node>
 </map>
