@@ -101,7 +101,28 @@
 <node CREATED="1560166082955" ID="ID_1367743442" MODIFIED="1560166102984" TEXT="Evita que os objetos se refiram uns aos outros explicitamente"/>
 <node CREATED="1560166103993" ID="ID_1517749598" MODIFIED="1560166127463" TEXT="Permite v&#xe1;rias intera&#xe7;&#xf5;es independentes"/>
 </node>
-<node CREATED="1560166176665" ID="ID_916551831" MODIFIED="1560166176665" TEXT=""/>
+<node CREATED="1560166176665" ID="ID_916551831" MODIFIED="1562249619532" TEXT="Faz com que duas classes interajam entre si sem que sejam relacionadas explicitamente"/>
+<node CREATED="1562249620755" ID="ID_1171720888" MODIFIED="1562249674497" TEXT="Deve ser delegada a responsabilidade para as classes de origem"/>
+<node CREATED="1562249675425" ID="ID_361727482" MODIFIED="1562249691480" TEXT="pode ser utilizada para implementar melhorias de funcionalidades"/>
+<node CREATED="1562249694136" ID="ID_626883519" MODIFIED="1562252125870" TEXT="check list">
+<node CREATED="1562249703168" ID="ID_182541216" MODIFIED="1562249902876" TEXT="identificar uma cole&#xe7;&#xe3;o de intera&#xe7;&#xe3;o de objetos que se beneficiariam multuamente com o desacoplamento"/>
+<node CREATED="1562249906767" ID="ID_277466145" MODIFIED="1562250035916" TEXT="Encapsular essa intera&#xe7;&#xe3;o em uma nova classe abstrata"/>
+<node CREATED="1562250029519" ID="ID_166279846" MODIFIED="1562250331162" TEXT="Crie uma inst&#xe2;ncia da nova classe e refa&#xe7;a a intera&#xe7;&#xe3;o das entre as classes atrav&#xe9;s da classe Mediator"/>
+<node CREATED="1562250332423" ID="ID_703166057" MODIFIED="1562252069959" TEXT="sempre equilibrar o desacoplamento e o principio da distribui&#xe7;&#xe3;o de responsabilidade"/>
+<node CREATED="1562252070359" ID="ID_511843935" MODIFIED="1562252107553" TEXT="Ter cuidado para n&#xe3;o criar uma &quot;controller&quot; ou uma classe &quot;deus&quot; (faz tudo)"/>
+</node>
+</node>
+<node CREATED="1562337696498" ID="ID_1939762618" MODIFIED="1562337706060" POSITION="right" TEXT="Chain Of Responsability">
+<node CREATED="1562337708407" ID="ID_1762895320" MODIFIED="1562337796296" TEXT="Evitar o acoplamento do rementente de uma mensagem ao seu receptor, quando existe mais de um receptor que pode dar a solu&#xe7;&#xe3;o"/>
+<node CREATED="1562337800313" ID="ID_782624354" MODIFIED="1562337889510" TEXT="A mensagem do remetente &#xe9; passado a uma manipulador, que conhecer&#xe1; toda a cadeia de responsabilidade, repassando a mensagem ao n&#xed;vel superior quando n&#xe3;o for poss&#xed;vel solucionar a requisi&#xe7;&#xe3;o"/>
+<node CREATED="1562337890887" ID="ID_314361352" MODIFIED="1562338400725" TEXT="&#xc9; poss&#xed;vel processar uma requisi&#xe7;&#xe3;o com apenas um pipeline de processamento, mesmo com v&#xe1;rios possibilidades de classes que podem solucionar, com uma composi&#xe7;&#xe3;o recursiva."/>
+<node CREATED="1562338154715" ID="ID_562141552" MODIFIED="1562338565966" TEXT="Check list">
+<node CREATED="1562338568274" ID="ID_1112042335" MODIFIED="1562338588589" TEXT="Uma classe abstrata Handler ir&#xe1; manter o pr&#xf3;ximo ponto"/>
+<node CREATED="1562338701446" ID="ID_532219631" MODIFIED="1562338764266" TEXT="Cada classe derivada de Handler deve implementar sua contribui&#xe7;&#xe3;o, ou delegar para a proxima classe derivada, caso n&#xe3;o possa processar a requisi&#xe7;&#xe3;o"/>
+<node CREATED="1562338806017" ID="ID_879769818" MODIFIED="1562338837489" TEXT="O remetente cria e define o link entre as classes derivada, montando sua sequencia"/>
+<node CREATED="1562338838274" ID="ID_530928137" MODIFIED="1562338882539" TEXT="Cada requisi&#xe7;&#xe3;o &#xe9; passada para a raiz da cadeia"/>
+<node CREATED="1562338883251" ID="ID_1414102105" MODIFIED="1562338908753" TEXT="A delega&#xe7;&#xe3;o recursiva causa a impress&#xe3;o de &quot;m&#xe1;gica&quot;"/>
+</node>
 </node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
 </node>
