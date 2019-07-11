@@ -124,6 +124,25 @@
 <node CREATED="1562338883251" ID="ID_1414102105" MODIFIED="1562338908753" TEXT="A delega&#xe7;&#xe3;o recursiva causa a impress&#xe3;o de &quot;m&#xe1;gica&quot;"/>
 </node>
 </node>
+<node CREATED="1562867094277" ID="ID_339571630" MODIFIED="1562867100960" POSITION="right" TEXT="Template Method">
+<node CREATED="1562867214880" ID="ID_319487973" MODIFIED="1562867224413" TEXT="Definir o esqueleto de um algor&#xed;timo"/>
+<node CREATED="1562867225744" ID="ID_1702939190" MODIFIED="1562867386765" TEXT="Delega a responsabilidade da implementa&#xe7;&#xe3;o de alguns passos do algor&#xed;timo para as subclasses"/>
+<node CREATED="1562867266607" ID="ID_713198031" MODIFIED="1562867309640" TEXT="A classe template possui um methodo que define a ordem de execu&#xe7;&#xe3;o dos m&#xe9;todos implementados pelas subclasses"/>
+<node CREATED="1562867310494" ID="ID_838078791" MODIFIED="1562867488765" TEXT="Utilizado para resolve implementa&#xe7;&#xe3;o de componentes que tem comportamentos similares mas n&#xe3;o permitem o uso de uma interface comum"/>
+<node CREATED="1562867696863" ID="ID_746448902" MODIFIED="1562867730949" TEXT="O componente default define quais passos do algor&#xed;timo s&#xe3;o vari&#xe1;veis">
+<node CREATED="1562867732687" ID="ID_982948876" MODIFIED="1562867753164" TEXT="e sua implementa&#xe7;&#xe3;o &#xe9; delegada as subclasses"/>
+<node CREATED="1562867753695" ID="ID_635370256" MODIFIED="1562867783076" TEXT="o restante &#xe9; implementado diretamente na classe abstrata encapsulando o restante do algor&#xed;timo"/>
+</node>
+<node CREATED="1562867785520" ID="ID_336472146" MODIFIED="1562868366908" TEXT="check list">
+<node CREATED="1562868705627" ID="ID_1830745416" MODIFIED="1562868721628" TEXT="Identificar quais passos s&#xe3;o comuns e quais s&#xe3;o vari&#xe1;veis"/>
+<node CREATED="1562868722298" ID="ID_1712033671" MODIFIED="1562868803083" TEXT="Defina uma classe abstrata base e defina os m&#xe9;todos abstratos que devem ser delegados as subclasses"/>
+<node CREATED="1562868803692" ID="ID_584211104" MODIFIED="1562868856949" TEXT="Implemente ou transfira todos os passos padr&#xf5;es para a classe base"/>
+<node CREATED="1562868857901" ID="ID_1012111421" MODIFIED="1562868918615" TEXT="defina uma m&#xe9;todo de execu&#xe7;&#xe3;o que ser&#xe1; respons&#xe1;vel por executar os passos do algor&#xed;timo"/>
+<node CREATED="1562868919146" ID="ID_528092280" MODIFIED="1562868950127" TEXT="Invoque o m&#xe9;todo de execu&#xe7;&#xe3;o (template) da classe base"/>
+<node CREATED="1562868952202" ID="ID_41351430" MODIFIED="1562869006124" TEXT="A rela&#xe7;&#xe3;o entre as subclasses e a classe base &#xe9; &quot;is a&quot; (extendem a classe base)"/>
+<node CREATED="1562869006878" ID="ID_708175980" MODIFIED="1562869075627" TEXT="As subclasses devem contem apenas a implementa&#xe7;&#xe3;o particular dos m&#xe9;todos atribuidos a ela, todo o restante da implementa&#xe7;&#xe3;o deve estar na classe base"/>
+</node>
+</node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
 </node>
 </map>
