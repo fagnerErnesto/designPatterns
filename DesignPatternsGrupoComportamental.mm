@@ -143,6 +143,40 @@
 <node CREATED="1562869006878" ID="ID_708175980" MODIFIED="1562869075627" TEXT="As subclasses devem contem apenas a implementa&#xe7;&#xe3;o particular dos m&#xe9;todos atribuidos a ela, todo o restante da implementa&#xe7;&#xe3;o deve estar na classe base"/>
 </node>
 </node>
+<node CREATED="1563562031127" ID="ID_555155579" MODIFIED="1563562035718" POSITION="right" TEXT="Interpreter">
+<node CREATED="1563562040586" ID="ID_17522028" MODIFIED="1563562091317" TEXT="basicamente um tradutor">
+<node CREATED="1563562092423" ID="ID_749745261" MODIFIED="1563563251750" TEXT="dada um determinada liguagem define uma representa&#xe7;&#xe3;o para interpretar a linguagem e retornar uma nova condi&#xe7;&#xe3;o baseada na representa&#xe7;&#xe3;o definida">
+<node CREATED="1563563254008" ID="ID_509670107" MODIFIED="1563563267974" TEXT="pt_BR -&gt; en_US"/>
+<node CREATED="1563563268728" ID="ID_465583345" MODIFIED="1563563283670" TEXT="en_US -&gt; el_MX"/>
+</node>
+</node>
+<node CREATED="1563562414758" ID="ID_950162615" MODIFIED="1563562423781" TEXT="mapear">
+<node CREATED="1563562425416" ID="ID_995405772" MODIFIED="1563562431812" TEXT="dominio para uma linguagem"/>
+<node CREATED="1563562432440" ID="ID_1423110559" MODIFIED="1563562445606" TEXT="Linguagem para uma gram&#xe1;tica"/>
+<node CREATED="1563562446553" ID="ID_1647176265" MODIFIED="1563562468229" TEXT="gram&#xe1;tica para uma hierarquia de orienta&#xe7;&#xe3;o a objeto."/>
+</node>
+<node CREATED="1563563296696" ID="ID_852047183" MODIFIED="1563563422853" TEXT="sugere-se modelar o dominio com regras recursivas">
+<node CREATED="1563563363960" ID="ID_185932402" MODIFIED="1563563479541" TEXT="Cada regra estaria em uma classe que tamb&#xe9;m &#xe9; um tipo composite (que referencia outra regra)"/>
+<node CREATED="1563563482246" ID="ID_1014592435" MODIFIED="1563563517813" TEXT="ou terminal que seria uma classe que finaliza o processo"/>
+</node>
+<node CREATED="1563563689063" ID="ID_224940506" MODIFIED="1563563768372" TEXT="usa o pattern estrutural Composite para interpretar as &apos;senten&#xe7;as&apos; solicitadas"/>
+<node CREATED="1563563771623" ID="ID_859700117" MODIFIED="1563563778772" TEXT="check list">
+<node CREATED="1563563780135" ID="ID_1687380884" MODIFIED="1563563824181" TEXT="Decidir se uma pequena linguagem oferece um justific&#xe1;vel retorno do investimento">
+<node CREATED="1563563825176" ID="ID_287780706" MODIFIED="1563563848469" TEXT="tempo de implementa&#xe7;&#xe3;o"/>
+<node CREATED="1563563831043" ID="ID_1050005587" MODIFIED="1563563838117" TEXT="tempo de processamento"/>
+<node CREATED="1563563841512" ID="ID_1098340643" MODIFIED="1563563844593" TEXT="complexidade"/>
+</node>
+<node CREATED="1563563852121" ID="ID_155039350" MODIFIED="1563563870116" TEXT="Definir as regras para a tradu&#xe7;&#xe3;o"/>
+<node CREATED="1563563870486" ID="ID_962047518" MODIFIED="1563563894197" TEXT="Mapear cada produto das regras para uma classe"/>
+<node CREATED="1563563894807" ID="ID_1204574289" MODIFIED="1563563932644" TEXT="Organizar o pacote de classes em uma estrutura de padr&#xe3;o Composite">
+<node CREATED="1563563935590" ID="ID_1473837539" MODIFIED="1563563953733" TEXT="ver Grupo Estrutural -&gt; Composite"/>
+</node>
+<node CREATED="1563563964311" ID="ID_653656153" MODIFIED="1563564005236" TEXT="Definir um m&#xe9;todo interpretador(Contexto) na hierarquia do Composite"/>
+<node CREATED="1563564005705" ID="ID_1555454850" MODIFIED="1563564222366" TEXT="O objeto Contexto deve encapsular o estado atual da entrada e sa&#xed;da em seu modelo e acumular no final">
+<node CREATED="1563564245188" ID="ID_665644952" MODIFIED="1563564275381" TEXT="Cada classe de regra deve fazer o seu trabalho de interpreta&#xe7;&#xe3;o e entregar o resultado para a pr&#xf3;xima classe"/>
+</node>
+</node>
+</node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
 </node>
 </map>
