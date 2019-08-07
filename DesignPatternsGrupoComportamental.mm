@@ -1,4 +1,4 @@
-<map version="1.0.1">
+<map version="1.1.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1558363280821" HGAP="21" ID="ID_231707250" LINK="DesignPatterns.mm" MODIFIED="1558363387720" TEXT="Grupo Comportamental" VSHIFT="10">
 <node CREATED="1558882780516" ID="ID_330463136" MODIFIED="1558882783760" POSITION="right" TEXT="Command">
@@ -175,6 +175,19 @@
 <node CREATED="1563564005705" ID="ID_1555454850" MODIFIED="1563564222366" TEXT="O objeto Contexto deve encapsular o estado atual da entrada e sa&#xed;da em seu modelo e acumular no final">
 <node CREATED="1563564245188" ID="ID_665644952" MODIFIED="1563564275381" TEXT="Cada classe de regra deve fazer o seu trabalho de interpreta&#xe7;&#xe3;o e entregar o resultado para a pr&#xf3;xima classe"/>
 </node>
+</node>
+</node>
+<node CREATED="1565196230681" ID="ID_1402686745" MODIFIED="1565196234458" POSITION="right" TEXT="Memento">
+<node CREATED="1565196238874" ID="ID_745155745" MODIFIED="1565196321321" TEXT="Sem violar o encapsulamento, &#xe9; utilizado para capturar e externalizar o estado interno de um objeto, que pode ter este estado restaurado posteriormente"/>
+<node CREATED="1565196321576" ID="ID_548508574" MODIFIED="1565196437589" TEXT="Pode ser utilizado quando existe a necessidade de armazenar o estado atual de um objeto para que possa ser restaurado futuramente."/>
+<node CREATED="1565196483914" ID="ID_1317468041" MODIFIED="1565196518088" TEXT="Um &quot;cookie&quot; m&#xe1;gico que d&#xe1; a capacidade de criar um check point do objeto"/>
+<node CREATED="1565196525866" ID="ID_466876475" MODIFIED="1565196547848" TEXT="Promove a possibilidade de um rollback ao estado completo do objeto."/>
+<node CREATED="1565196553786" ID="ID_1723114369" MODIFIED="1565196583688" TEXT="check list">
+<node CREATED="1565196584652" ID="ID_1326656166" MODIFIED="1565196625864" TEXT="Identificar as regras do objeto cuidador (que armazena o estado do objeto), e do objeto fonte"/>
+<node CREATED="1565196626617" ID="ID_340241109" MODIFIED="1565196701536" TEXT="Crie uma classe Memento, que deve ter os mesmos par&#xe2;metros do objeto fonte"/>
+<node CREATED="1565196724346" ID="ID_704195847" MODIFIED="1565196777896" TEXT="A classe de armazenamento (uma terceira classe que recebe e retorna o objeto Memento) deve saber quando armazenar o check point"/>
+<node CREATED="1565196778778" ID="ID_1297958354" MODIFIED="1565196850888" TEXT="A classe de armazenamento deve ser capaz de devolver o objeto Memento armazenado para que a classe original possa ser restaurada"/>
+<node CREATED="1565196861865" ID="ID_1995642782" MODIFIED="1565196896616" TEXT="O objeto fonte deve ser capaz de se regenerar a partir do objeto Memento recebido"/>
 </node>
 </node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
