@@ -1,4 +1,4 @@
-<map version="1.1.0">
+<map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1558363280821" HGAP="21" ID="ID_231707250" LINK="DesignPatterns.mm" MODIFIED="1558363387720" TEXT="Grupo Comportamental" VSHIFT="10">
 <node CREATED="1558882780516" ID="ID_330463136" MODIFIED="1558882783760" POSITION="right" TEXT="Command">
@@ -188,6 +188,17 @@
 <node CREATED="1565196724346" ID="ID_704195847" MODIFIED="1565196777896" TEXT="A classe de armazenamento (uma terceira classe que recebe e retorna o objeto Memento) deve saber quando armazenar o check point"/>
 <node CREATED="1565196778778" ID="ID_1297958354" MODIFIED="1565196850888" TEXT="A classe de armazenamento deve ser capaz de devolver o objeto Memento armazenado para que a classe original possa ser restaurada"/>
 <node CREATED="1565196861865" ID="ID_1995642782" MODIFIED="1565196896616" TEXT="O objeto fonte deve ser capaz de se regenerar a partir do objeto Memento recebido"/>
+</node>
+</node>
+<node CREATED="1565363554851" ID="ID_1533544379" MODIFIED="1565363558003" POSITION="right" TEXT="Iterator">
+<node CREATED="1565363703950" ID="ID_1469541844" MODIFIED="1565363761871" TEXT="&#xc9; uma op&#xe7;&#xe3;o para acessar uma lista objetos sem a necessidade de expor as particularidade de classe respons&#xe1;vel pela cole&#xe7;&#xe3;o"/>
+<node CREATED="1565363763146" ID="ID_787055690" MODIFIED="1565363795485" TEXT="Abstra&#xe7;&#xe3;o para leitura de estrutura de dados armazenados em uma classe de cole&#xe7;&#xe3;o"/>
+<node CREATED="1565363799532" ID="ID_1421195171" MODIFIED="1565363837248" TEXT="&#xe9; poss&#xed;vel navegar, adicionar e remover os objetos presentes na cole&#xe7;&#xe3;o"/>
+<node CREATED="1565364046615" ID="ID_4942578" MODIFIED="1565364050342" TEXT="check list">
+<node CREATED="1565364051393" ID="ID_1395698031" MODIFIED="1565364166827" TEXT="Criar um m&#xe9;todo &quot;factory&quot; na classe respons&#xe1;vel pela cole&#xe7;&#xe3;o que gera um objeto Iterator"/>
+<node CREATED="1565364083350" ID="ID_1465437944" MODIFIED="1565364130989" TEXT="Projetar uma classe Iterator que possa acessar navegar e manipular todos os elementos de uma cole&#xe7;&#xe3;o"/>
+<node CREATED="1565364132071" ID="ID_58859567" MODIFIED="1565364218844" TEXT="A classe cliente solicita &#xe0; classe de cole&#xe7;&#xe3;o a cria&#xe7;&#xe3;o de um objeto Iterator"/>
+<node CREATED="1565364203152" ID="ID_1971836803" MODIFIED="1565364260964" TEXT="O cliente poder&#xe1; usar os m&#xe9;todos de manipula&#xe7;&#xe3;o, definidos na classe Iterator definida no segundo item do check list"/>
 </node>
 </node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
