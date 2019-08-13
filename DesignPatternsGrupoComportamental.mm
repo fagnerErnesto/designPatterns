@@ -201,6 +201,11 @@
 <node CREATED="1565364203152" ID="ID_1971836803" MODIFIED="1565364260964" TEXT="O cliente poder&#xe1; usar os m&#xe9;todos de manipula&#xe7;&#xe3;o, definidos na classe Iterator definida no segundo item do check list"/>
 </node>
 </node>
+<node CREATED="1565565070363" ID="ID_1038856640" MODIFIED="1565565073470" POSITION="right" TEXT="Visitor">
+<node CREATED="1565565074566" ID="ID_1457514780" MODIFIED="1565565296236" TEXT="Forma de adicionar novas opera&#xe7;&#xf5;es a elementos de um objeto sem a necessidade de alterar a classe de origem."/>
+<node CREATED="1565565095389" ID="ID_1039373670" MODIFIED="1565565386167" TEXT="uma classica forma de recuperar informa&#xe7;&#xf5;es perdidas"/>
+<node CREATED="1565565387374" ID="ID_1746706278" MODIFIED="1565565387374" TEXT=""/>
+</node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
 </node>
 </map>
