@@ -1,4 +1,4 @@
-<map version="1.0.1">
+<map version="1.1.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1558363280821" HGAP="21" ID="ID_231707250" LINK="DesignPatterns.mm" MODIFIED="1558363387720" TEXT="Grupo Comportamental" VSHIFT="10">
 <node CREATED="1558882780516" ID="ID_330463136" MODIFIED="1558882783760" POSITION="right" TEXT="Command">
@@ -203,8 +203,28 @@
 </node>
 <node CREATED="1565565070363" ID="ID_1038856640" MODIFIED="1565565073470" POSITION="right" TEXT="Visitor">
 <node CREATED="1565565074566" ID="ID_1457514780" MODIFIED="1565565296236" TEXT="Forma de adicionar novas opera&#xe7;&#xf5;es a elementos de um objeto sem a necessidade de alterar a classe de origem."/>
-<node CREATED="1565565095389" ID="ID_1039373670" MODIFIED="1565565386167" TEXT="uma classica forma de recuperar informa&#xe7;&#xf5;es perdidas"/>
-<node CREATED="1565565387374" ID="ID_1746706278" MODIFIED="1565565387374" TEXT=""/>
+<node CREATED="1565565095389" ID="ID_1039373670" MODIFIED="1565693743210" TEXT="uma tecnica classica de recuperar informa&#xe7;&#xf5;es perdidas"/>
+<node CREATED="1565565387374" ID="ID_1746706278" MODIFIED="1565693770442" TEXT="Faz a coisa certa baseado em 2 tipos de objetos"/>
+<node CREATED="1565693772095" ID="ID_1194477420" MODIFIED="1565695621402" TEXT="A classe Visitor ira transformar o objeto concreto que representa a estrutura de dados passado a ela"/>
+<node CREATED="1565695629614" ID="ID_1589803478" MODIFIED="1565695742748" TEXT="O padrao Visitor usa a agrega&#xe7;ao como forma de comunica&#xe7;ao entre os objetos"/>
+<node CREATED="1565695743776" ID="ID_370349317" MODIFIED="1565696373802" TEXT="A classe que define o elemento ira implementar um metodo que recebe o visitor e o visitor ira receber o this (na implmentacao da classe que recebe o visitante)"/>
+<node CREATED="1565696905182" ID="ID_1896940501" MODIFIED="1565697043306" TEXT="atraves dessa troca de mensagens, a classe visitor baseado no tipo do objeto tipo e do tipo da classe visitor ser executada a opera&#xe7;ao necessaria, desse forma teria um &quot;double dispatch&quot; ao inves de &quot;single dispatch&quot; comumente usado em OO."/>
+<node CREATED="1565697045774" ID="ID_648631551" MODIFIED="1565697049690" TEXT="check list">
+<node CREATED="1565697050447" ID="ID_1281257918" MODIFIED="1565697170074" TEXT="Confirme que a hierarquia de classes do elemento eh suficientemente estavel e que os metodos publicos sejam suficientes para que o visitor possa fazer seu trabalho."/>
+<node CREATED="1565697170766" ID="ID_257960262" MODIFIED="1565697241530" TEXT="Crie uma classe Visitor com um metodo visit(Element) para cada elemento derivado ao Visitor"/>
+<node CREATED="1565697242702" ID="ID_881930307" MODIFIED="1565697284330" TEXT="Adicione uma classe accept(Visitor) a cada elemento que sera visitado">
+<node CREATED="1565697285294" ID="ID_1053163154" MODIFIED="1565697311562" TEXT="A implementa&#xe7;ao de accept sera a mesma em cada subclasse Element"/>
+<node CREATED="1565697312959" ID="ID_341968066" MODIFIED="1565697354416" TEXT="accept(Visitor) { v.visit( this ) }">
+<font ITALIC="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1565697362958" ID="ID_771916265" MODIFIED="1565697403578" TEXT="Isso eh necessario para que seja passado exatamente o tipo da subclasse ao inves do tipo da classe pai."/>
+</node>
+<node CREATED="1565697462318" ID="ID_1109440791" MODIFIED="1565697762730" TEXT="A hierarquia da classe elementos eh acoplada apenas a classe base de Visitor">
+<node CREATED="1565697702366" ID="ID_1340839573" MODIFIED="1565697823882" TEXT="Mas a hierarquia das classes Visitor e relacionada a objeto do tipo Elemento"/>
+</node>
+<node CREATED="1565697832862" ID="ID_827394240" MODIFIED="1565697859930" TEXT="Crie uma classe Visitor para cada opera&#xe7;ao a ser executada"/>
+<node CREATED="1565697926510" ID="ID_1252845681" MODIFIED="1565697993866" TEXT="A classe cliente criara objetos do Visitor (baseado nas operacoes a serem executadas) e as passara ao objeto elemento atraves do metodo accept"/>
+</node>
 </node>
 <node CREATED="1558885264991" ID="ID_1609883106" MODIFIED="1558885293092" POSITION="left" TEXT="Espec&#xed;fico para tratar a comuni&#xe7;&#xe3;o entre objetos"/>
 </node>
